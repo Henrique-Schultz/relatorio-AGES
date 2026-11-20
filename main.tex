@@ -1,0 +1,1593 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+PONTIFÍCIA UNIVERSIDADE CATÓLICA DO RIO GRANDE DO SUL
+
+ESCOLA POLITÉCNICA
+
+Curso de BACHARELADO EM ENGENHARIA DE SOFTWARE
+
+AGES - agência experimental de engenharia de software
+
+HENRIQUE PINHO VALENTE SCHULTZ
+
+memorial de atuação na agência experimental de engenharia de software --
+período 09/08/2024 a 21/09/2026
+
+AGES III
+
+Porto Alegre
+
+2026
+
+\textbf{\hfill\break
+}
+
+\section{RESUMO}\label{resumo}
+
+Este relatório apresenta minha trajetória nas experiências AGES I, AGES
+II e AGES III (em andamento) evidenciando minha evolução técnica,
+acadêmica e profissional ao longo do desenvolvimento de três projetos
+distintos.
+
+No AGES I, participei do projeto VIR -- Visual Interactive Reading, onde
+vivenciei o processo inicial de um sistema: levantamento de requisitos,
+criação de protótipos, organização de ambiente, desenvolvimento das
+primeiras funcionalidades em React e integração entre frontend, backend
+e banco de dados.
+
+No AGES II, atuei no projeto Pró-Mata, aprofundando meu domínio em
+desenvolvimento web moderno com React, TypeScript, Tailwind e TanStack
+Router, além da criação de componentes reutilizáveis, fluxos de
+navegação, design system inicial e estudos de validação e testes.
+
+Já no AGES III, estou atuando no projeto FinUp com foco em arquitetura,
+DevOps e infraestrutura. Tenho contribuido com a definição da
+arquitetura do sistema, a estruturação dos repositórios no GitHub, o
+estudo de serviços AWS, a configuração de pipelines de CI/CD, a adoção
+da ferramenta Railforge para padronização do desenvolvimento e a
+realização de code reviews. Essa experiência tem ampliado minhas
+habilidades em decisões arquiteturais, containerização, integração
+contínua, organização e comunicação de equipes, organização de código, e
+entendimento de produto, contribuindo muito para meu crescimento como
+desenvolvedor.
+
+\textbf{Palavras-chave:} AGES; Engenharia de Software; Prototipação;
+Desenvolvimento Web.
+
+\textbf{\hfill\break
+}
+
+\section{LIsta de ilustrações}\label{lista-de-ilustrauxe7uxf5es}
+
+Figura 1 - Foto da Equipe - VIR
+
+Figura 2 - Foto da Equipe - PRO-MATA
+
+\textbf{Figura 3 - Foto da Equipe - FinUp}
+
+\section{\texorpdfstring{\hfill\break
+}{ }}\label{section}
+
+\section{SUMÁRIO}\label{sumuxe1rio}
+
+\hyperref[apresentauxe7uxe3o-da-trajetuxf3ria-do-aluno]{1 - APRESENTAÇÃO
+DA TRAJETÓRIA DO ALUNO} 5
+
+\hyperref[_Toc45627142]{2 - PROJETOS AGES I - ``VIR -- Visual
+Interactive Reading''} 7
+
+\hyperref[introduuxe7uxe3o]{2.1 Introdução} 7
+
+\hyperref[_Toc45627144]{2.2 Desenvolvimento do Projeto} 7
+
+\hyperref[atividades-desempenhadas-pelo-aluno-no-projeto]{2.3 Atividades
+desempenhadas pelo aluno no projeto} 9
+
+\hyperref[conclusuxe3o]{2.4. Conclusão} 12
+
+\hyperref[_Toc45627142]{3 - PROJETOS AGES II - ``PRO-MATA ''} 15
+
+\hyperref[introduuxe7uxe3o]{3.1 Introdução} 15
+
+\hyperref[_Toc45627144]{3.2 Desenvolvimento do Projeto} 15
+
+\hyperref[atividades-desempenhadas-pelo-aluno-no-projeto]{3.3 Atividades
+desempenhadas pelo aluno no projeto} 18
+
+\hyperref[conclusuxe3o]{3.4. Conclusão} 23
+
+\hyperref[_Toc45627142]{4 - PROJETOS AGES III - ``FINUP ''} 25
+
+\hyperref[introduuxe7uxe3o]{4.1 Introdução} 25
+
+\hyperref[_Toc45627144]{4.2 Desenvolvimento do Projeto} 25
+
+\hyperref[atividades-desempenhadas-pelo-aluno-no-projeto]{4.3 Atividades
+desempenhadas pelo aluno no projeto} 28
+
+\hyperref[referuxeancias]{REFERÊNCIAS} 30
+
+\section{1 - APRESENTAÇÃO DA TRAJETÓRIA DO
+ALUNO}\label{apresentauxe7uxe3o-da-trajetuxf3ria-do-aluno}
+
+Desde cedo, minha curiosidade esteve ligada à criação. Antes mesmo de
+pensar em Engenharia de Software, eu explorava ferramentas como
+Photoshop, Premiere, Blender e Animate para entender como imagens,
+vídeos e animações ganhavam vida. Essa familiaridade com construção
+visual despertou uma pergunta que se tornaria decisiva na minha
+trajetória: \emph{``como o software por trás disso tudo funciona?''}.
+
+Durante a quarentena, essa inquietação se tornou um ponto de virada.
+Tranquei Economia, mergulhei por um período na criação de conteúdo e,
+refletindo sobre futuro e propósito, percebi que minha motivação estava
+menos em comunicar ideias e mais em construir soluções\textbf{.} Foi a
+partir desse momento que decidi migrar definitivamente para TI e iniciar
+meu caminho na Engenharia de Software.
+
+Desde o início da graduação, busquei equilíbrio entre técnica,
+organização e criatividade. No meu dia a dia, adotei ferramentas como
+Notion, Miro, Trello, Forest e automações com Alexa, o que estruturou o
+meu jeito de aprender: iterativo, visual e orientado a processos. Ao
+longo do curso, fui desenvolvendo a convicção de que queria me tornar
+full stack, capaz de transformar ideias em produtos completos.
+
+Minha trajetória profissional começou a ganhar forma no estágio de dois
+anos no Palácio da Justiça, experiência que, embora baseada em
+ferramentas no-code para construção de aplicações, foi extremamente rica
+em termos de maturidade profissional. Mesmo sem lidar diretamente com
+código tradicional, desenvolvi habilidades fundamentais para a área de
+TI: organização, comunicação, entendimento de requisitos, trabalho
+colaborativo e responsabilidade com entregas. Além disso, tive a
+oportunidade de participar de processos internos relevantes, incluindo a
+condução de entrevistas para novos candidatos à vaga de TI, o que
+ampliou minha visão sobre cultura de equipe e critérios de seleção. Essa
+vivência consolidou minhas soft skills e me deu segurança para atuar em
+ambientes reais de desenvolvimento. Ao final desse ciclo, fui aprovado
+na Dell IT Academy, que expandiu minha visão sobre arquitetura,
+qualidade e práticas modernas de desenvolvimento --- conhecimentos que
+se tornaram essenciais para minha evolução dentro da AGES.
+
+A transição do AGES I para o AGES II marcou um ponto significativo de
+evolução. Cheguei no novo ciclo mais maduro tecnicamente e com uma visão
+mais clara de produto: antes de codar, eu precisava entender\textbf{,}
+esboçar\textbf{,} prototipar. Esse pensamento guiou meu processo no
+projeto Pró-Mata, onde passei a validar fluxos no Figma, aprimorar
+interações e antecipar decisões de UX antes de escrever qualquer linha
+de código. A prática de ``prototipar primeiro, codificar depois''
+reduziu retrabalho, alinhou expectativas com cliente e tornou meu
+desenvolvimento mais intencional.
+
+Do ponto de vista técnico, foi no AGES II que descobri um conjunto de
+tecnologias modernas que facilitaram meu desenvolvimento e ampliaram
+minha compreensão sobre como um frontend profissional é estruturado.
+Passei a utilizar ferramentas como React aliado ao TypeScript, Tailwind
+CSS, TanStack Router, Zustand, React Hook Form e Zod, entendendo como
+cada uma contribui para tornar o código mais organizado e previsível.
+Nesse processo, também amadureci meu uso de Git/GitHub e consolidei
+hábitos de organização e comunicação que tornaram meu trabalho mais
+estruturado e profissional.
+
+Ao mesmo tempo, meu crescimento não foi apenas técnico. A participação
+ativa nas discussões, a segurança para propor ideias, a abertura para
+feedback e a melhora na comunicação com o time marcaram meu avanço em
+soft skills. Passei a enxergar o desenvolvimento não só como código, mas
+como colaboração, clareza e tomada de decisão\textbf{.} Meu papel deixou
+de ser apenas entregar tarefas e passou a envolver visão de produto,
+entendimento de fluxo, coerência visual e contribuição para um design
+system inicial.
+
+Hoje, encerro minha AGES II com uma base muito mais sólida: rotas,
+componentes, padrões visuais e arquitetura de estado definidos;
+compreensão mais profunda da relação entre design e código; e uma visão
+mais completa de como um sistema nasce no papel e ganha forma na
+prática.
+
+Essa evolução acadêmica, técnica e pessoal define minha jornada até
+aqui. A AGES tem sido não apenas um espaço de prática, mas um marco
+contínuo na construção da minha identidade como desenvolvedor: mais
+consciente, mais consistente e mais preparado para transformar ideias em
+soluções reais.
+
+\protect\phantomsection\label{_Toc45627142}{}
+
+\section{2 - PROJETOS AGES I - ``VIR -- Visual Interactive
+Reading''}\label{projetos-ages-i---vir-visual-interactive-reading}
+
+\subsection{2.1 Introdução}\label{introduuxe7uxe3o}
+
+\protect\phantomsection\label{_Toc45627144}{}O projeto "VIR -- Visual
+Interactive Reading" busca desenvolver um aplicativo interativo de
+leitura para jovens de 12 a 15 anos, alinhado às competências visuais da
+geração Alpha. O objetivo é oferecer uma experiência que combina textos
+de autores clássicos e contemporâneos com animações, estimulando a
+criatividade visual e engajando leitores em formação.
+
+O VIR surge da necessidade identificada em escolas do ensino
+fundamental, que enfrentam desafios na formação de leitores engajados.
+Baseado em pesquisas acadêmicas e entrevistas com educadores, o
+aplicativo contará com funcionalidades como login personalizado, estante
+digital, controle de leitura individualizada e recomendação de obras por
+faixa etária. Essa abordagem busca complementar a leitura tradicional,
+tornando-a mais atrativa e interativa para o público jovem.
+
+\subsection{2.2 Desenvolvimento do
+Projeto}\label{desenvolvimento-do-projeto}
+
+\textbf{Stakeholders do Projeto:}
+
+\begin{itemize}
+\item
+  Hermílio Santos (Professor da Escola de Humanidades - Sociologia -
+  PUCRS)
+\item
+  Paula Vianna (Mestranda em Sociologia - Escola de Humanidades - PUCRS)
+\end{itemize}
+
+\textbf{Período de Execução}: Segundo semestre de 2024.
+
+Figura - Foto do time
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Repositório do código Fonte do Projeto}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/tree/main}
+
+O código fonte está hospedado no GitLab, onde todo o desenvolvimento
+colaborativo é gerenciado.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{Banco de Dados utilizado}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/banco_dados}
+
+\begin{quote}
+Diagrama das tabelas do banco de dados, incluindo usuários, livros,
+capítulos, páginas, vídeos e progresso de leitura, ilustrando suas
+relações e funcionalidades no projeto VIR.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Arquitetura utilizada}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/arquitetura}
+
+Arquitetura utliza React no frontend, Flask na API backend e PostgreSQL
+como banco de dados.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  \textbf{Protótipos das telas desenvolvidas}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/design_mockups}
+
+Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
+das interfaces.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  \textbf{Tecnologias Utilizadas}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/configuracao}
+
+React (Frontend): Uma biblioteca JavaScript para construir interfaces de
+usuário dinâmicas e modernas, permitindo a criação de componentes
+reutilizáveis e otimizando a atualização de interfaces por meio do
+virtual DOM.
+
+Flask (Backend): Microframework web para Python que permite a criação de
+APIs RESTful e aplicações web de forma simples e flexível.
+
+Python: Linguagem de programação usada no backend devido à sua sintaxe
+clara e suporte extensivo a bibliotecas.
+
+PostgreSQL: Sistema de gerenciamento de banco de dados relacional,
+conhecido por sua robustez e conformidade com padrões SQL.
+
+\subsection{2.3 Atividades desempenhadas pelo aluno no
+projeto}\label{atividades-desempenhadas-pelo-aluno-no-projeto}
+
+\textbf{2.3.1 Sprint 0}
+
+Durante a Sprint 0, meu foco foi compreender os requisitos do cliente e
+dar os primeiros passos no desenvolvimento do projeto. As atividades
+foram estruturadas para garantir que as bases do projeto estivessem bem
+estabelecidas.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Preparação para a Reunião Inicial: Desenvolvi perguntas para a reunião
+  com o cliente, focando em esclarecer os requisitos, funcionalidades,
+  design e aspectos técnicos do sistema.
+\item
+  Desenvolvimento de Mockups no Figma: Trabalhei na criação de mockups,
+  com ênfase no footer do aplicativo. Testei diferentes versões para
+  aprimorar a interface e explorei ideias para o scroll da
+  funcionalidade de leitura, inspirando-me no estilo de scroll do
+  TikTok.
+\item
+  Configuração do Ambiente de Desenvolvimento: Clonei o repositório do
+  GitLab para minha máquina local, ajustei o ambiente, instalei Node.js
+  e suas dependências. Fiz a configuração inicial necessária para
+  garantir o funcionamento do projeto.
+\item
+  Revisão de Git e Shell: Para melhorar o fluxo de desenvolvimento,
+  revisei o uso do Git e comandos do shell, fundamentais para a
+  organização e colaboração no projeto.
+\item
+  Correção de Vulnerabilidades: Durante a instalação do Node.js,
+  encontrei vulnerabilidades que foram corrigidas. Com a ajuda dos
+  alunos do AGES IV, entendi que essas vulnerabilidades não impactariam
+  o desenvolvimento inicial.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  Figma: Utilizado para a criação dos mockups e testes de interface.
+\item
+  GitLab: Ferramenta de versionamento usada para clonar e gerenciar o
+  código-fonte do projeto.
+\item
+  Node.js: Instalado como base para o backend do projeto, com as
+  dependências necessárias configuradas.
+\item
+  Comandos de Git e Shell: Revisados e utilizados para a gestão do
+  repositório e ambiente local.
+\end{itemize}
+
+\textbf{Contribuições no Desenvolvimento:\\
+}\strut \\
+Minhas principais contribuições nesta sprint foram a criação dos mockups
+iniciais no Figma, com foco em uma interface intuitiva, e a configuração
+do ambiente de desenvolvimento. A preparação detalhada para a reunião
+inicial com o cliente também ajudou a garantir que as expectativas e
+requisitos do sistema fossem claramente definidos.
+
+\textbf{2.3.2 Sprint 1}
+
+Na Sprint 1, o foco foi o desenvolvimento das funcionalidades de
+navegação e layout do aplicativo, com destaque para o componente de
+footer e o fluxo de leitura, além do estudo contínuo de tecnologias
+essenciais para o projeto.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Estudo de React: Aprofundei meus conhecimentos em React para
+  desenvolver as funcionalidades de navegação do aplicativo. Isso
+  incluiu a criação de componentes e o gerenciamento de estado,
+  essenciais para o funcionamento do sistema.
+\item
+  Criação do Footer Component: Desenvolvi o componente de footer na tela
+  de estante/biblioteca, garantindo uma navegação eficiente. Fiz ajustes
+  no layout utilizando CSS, centralizando e estilizando ícones SVG para
+  uma apresentação mais organizada e responsiva.
+\item
+  Atualização e Configuração do Ambiente: Reconfigurei o ambiente de
+  desenvolvimento e criei uma nova branch específica para o
+  desenvolvimento do Footer Component. Isso ajudou a manter o controle
+  das modificações e facilitou o trabalho colaborativo.
+\item
+  Implementação Inicial das Rotas: Iniciei a implementação das rotas de
+  navegação entre as páginas do aplicativo através dos botões do footer,
+  mas não consegui finalizá-las devido à carga de provas e trabalhos
+  acadêmicos acumulados.
+\item
+  Acompanhamento do Time: Embora meu progresso tenha sido limitado,
+  acompanhei o desenvolvimento das tarefas da minha squad, garantindo
+  que o andamento do projeto continuasse conforme o planejado.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  React: Utilizado para criar o componente de footer e gerenciar a
+  navegação entre as páginas do aplicativo.
+\item
+  CSS e SVG: CSS foi aplicado para estilizar o layout e centralizar os
+  ícones SVG, melhorando o controle visual e responsividade.
+\item
+  GitLab: Utilizado para gerenciar o repositório do projeto e criar a
+  branch dedicada ao Footer Component.
+\item
+  Node.js: Mantido como base do ambiente de desenvolvimento para
+  garantir o funcionamento adequado da aplicação.
+\end{itemize}
+
+\textbf{Contribuições no Desenvolvimento:\\
+}\strut \\
+Minha principal contribuição nesta sprint foi o desenvolvimento do
+Footer Component e o início da implementação das rotas de navegação,
+essenciais para o fluxo do aplicativo. Apesar das limitações impostas
+pela carga acadêmica, garanti que o layout e a estrutura do footer
+estivessem finalizados e funcionais, além de contribuir para o andamento
+da squad ao acompanhar as tarefas do time.
+
+\textbf{2.3.3 Sprint 2}
+
+Na Sprint 2, o foco foi o desenvolvimento da página de login do VIR,
+assegurando funcionalidade, integração com o backend e design intuitivo.
+As tarefas incluíram desde a criação e estilização do componente até a
+resolução de problemas encontrados durante o desenvolvimento.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Criação de uma nova branch: Iniciei o desenvolvimento criando a branch
+  feature/Student/Login/Create-Login-Page a partir da branch dev,
+  garantindo organização e controle das modificações.
+\item
+  Desenvolvimento do Componente Form: Desenvolvi e estilizei o
+  componente Form, que incluiu os campos de input para "Email" e
+  "Senha", com funcionalidade de censura no campo de senha.
+\item
+  Criação da Página de Login: Criei e estilizei a página de login,
+  integrando o símbolo do VIR e o componente Form, garantindo uma
+  interface funcional e intuitiva.
+\item
+  Configuração e Integração: Implementei o envio de um arquivo JSON
+  contendo email e senha ao endpoint correspondente, assegurando
+  funcionalidade básica de autenticação.
+\item
+  Controle de Versionamento: Realizei commit das alterações, rebase com
+  a branch dev para manter as atualizações e push para o repositório
+  remoto.
+\item
+  Resolução de Problemas no GitLab: Ao fazer um pull request para a
+  branch errada (main), corrigi rapidamente com a ajuda dos colegas do
+  AGES IV, garantindo a manutenção do fluxo de trabalho
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  GitLab: Utilizado para criação da branch, versionamento do código e
+  push das alterações.
+\item
+  Node.js: Mantido no ambiente de desenvolvimento para suporte ao envio
+  do JSON.
+\item
+  CSS: Usado para estilizar a interface e aprimorar o layout da página
+  de login.
+\item
+  React: Empregado no desenvolvimento do componente Form e na integração
+  da página de login.
+\end{itemize}
+
+\textbf{Contribuições no Desenvolvimento:}
+
+Minha principal contribuição nesta sprint foi a criação e estilização da
+página de login, incluindo o componente Form e a integração com o
+backend para envio do JSON. Além disso, a resolução de problemas
+relacionados ao GitLab contribuiu para o fluxo de trabalho da equipe,
+garantindo organização e eficiência.
+
+\textbf{2.3.4 Sprint 3}
+
+Na Sprint 3, o foco principal foi o desenvolvimento do SchoolFormModal,
+com atenção especial à sua estrutura, estilização e funcionalidade, além
+de estudos relacionados ao gerenciamento de estado no React.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Estruturação do SchoolFormModal: Desenvolvi o modal com header, footer
+  e ícone "X" (importado como PNG), além dos botões "Cancelar" e
+  "Confirmar".
+\item
+  Organização de Arquivos CSS: Criei arquivos CSS individuais para cada
+  componente do SchoolFormModal, permitindo maior modularidade e
+  manutenção.
+\item
+  Estilização de Botões: Estilizei o botão "Confirmar" com ajustes
+  visuais, como cor, sombra e comportamentos específicos para os estados
+  hover e click.
+\item
+  Criação de Componentes Reutilizáveis: Organizei os botões "Cancelar" e
+  "Confirmar" como componentes individuais na pasta adminCommons.
+\item
+  Integração Visual: Adicionei o SchoolFormModal à página da escola
+  (escolaPage) para acompanhar o desenvolvimento visual no contexto do
+  sistema.
+\item
+  Estudo de React: Realizei estudos aprofundados sobre o hook useState,
+  compreendendo melhor o gerenciamento de estado em componentes
+  funcionais.
+\item
+  Estilização de Inputs: Estilizei os campos de input do modal e revisei
+  a estilização geral, adicionando estados hover, focus e pressed aos
+  elementos.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  React: Utilizado para desenvolver o modal, criar componentes
+  individuais e implementar o gerenciamento de estado com o hook
+  useState.
+\item
+  CSS: Aplicado na estilização de botões e inputs, com foco em
+  modularidade e estados dinâmicos.
+\item
+  GitLab: Mantido como ferramenta de versionamento para gerenciar as
+  alterações no projeto.
+\end{itemize}
+
+\textbf{Contribuições no Desenvolvimento:}
+
+Minha principal contribuição nesta sprint foi o desenvolvimento completo
+do SchoolFormModal\textbf{,} abrangendo estrutura, estilização e
+integração visual na página da escola. Além disso, os estudos sobre o
+hook useState aumentaram minha eficiência no gerenciamento de estados em
+componentes React.
+
+\textbf{2.3.5 Sprint 4}
+
+Na Sprint 4, o foco foi o desenvolvimento e finalização das
+funcionalidades relacionadas à gestão de alunos, incluindo os
+componentes Student Modal Form, Student List Component e Student Page,
+além de melhorias no controle de estado e correção de problemas
+técnicos.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Correção do Controle de Estado: Resolvi problemas no controle de
+  abertura (isOpen) do modal no componente AlunoPage, ajustando o uso de
+  props entre componentes pai e filho.
+\item
+  Estudo sobre CSS: Realizei estudos sobre propriedades de display no
+  CSS, como Grid, Flexbox e alinhamentos (align-items, align-content,
+  justify-items, justify-content), aprofundando o entendimento sobre as
+  melhores práticas de estilização.
+\item
+  Desenvolvimento de Componentes: Concluí o desenvolvimento e a
+  estilização dos componentes Student Page, Student Modal Form e Student
+  List Component, garantindo funcionalidade e integração visual.
+\item
+  Push e Merge Request: Realizei push e merge request da página de
+  aluno, garantindo a sincronização das alterações no repositório
+  remoto.
+\item
+  Investigação de Falhas: Identifiquei e tentei corrigir falhas na
+  pipeline devido a branch desatualizada, realizando rebase para
+  resolver os conflitos.
+\item
+  Implementação de Endpoints: Iniciei a implementação dos endpoints da
+  página de aluno, enfrentando obstáculos técnicos que ainda precisam de
+  resolução.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  React: Utilizado para corrigir o controle de estado e desenvolver os
+  componentes relacionados à página de aluno.
+\item
+  CSS: Aplicado para estilização dos componentes, com foco no uso
+  prático de Grid e Flexbox.
+\item
+  GitLab: Usado para realizar o push, rebase e merge request das
+  alterações no repositório.
+\item
+  Node.js: Base para a tentativa de implementação dos endpoints.
+\end{itemize}
+
+\textbf{Contribuições no Desenvolvimento:}
+
+Minha principal contribuição nesta sprint foi o desenvolvimento e
+finalização da Student Page\textbf{,} Student Modal Form e Student List
+Component, essenciais para a gestão de alunos. Além disso, resolvi
+problemas técnicos relacionados ao controle de estado no modal e
+contribuí para a estabilização do fluxo de trabalho no repositório.
+
+\subsection{2.4. Conclusão}\label{conclusuxe3o}
+
+Este projeto se destacou como uma experiência transformadora na minha
+trajetória acadêmica, pois me proporcionou uma visão ampla e prática do
+fluxo de desenvolvimento de um projeto real. Desde a definição de
+requisitos até a entrega de funcionalidades, pude compreender como as
+diferentes etapas de um projeto se interconectam, exigindo planejamento,
+colaboração e atenção aos detalhes.
+
+O desenvolvimento do VIR exigiu que eu aprofundasse meu entendimento
+sobre a estruturação de um projeto como um todo, incluindo a integração
+entre o front-end, o back-end e o banco de dados. Trabalhar em um
+ambiente dinâmico me permitiu visualizar como essas áreas se comunicam,
+como gerenciar estados e como organizar componentes modulares e
+reutilizáveis de forma eficiente. Além disso, o uso de ferramentas como
+React, GitLab e CSS reforçou a importância de boas práticas de
+desenvolvimento e versionamento.
+
+Essa experiência também destacou a relevância de metodologias ágeis para
+organizar o trabalho em equipe e garantir entregas contínuas. Aprendi a
+lidar com problemas técnicos, como falhas na pipeline e dificuldades de
+integração, e a importância de alinhar expectativas com a equipe e
+stakeholders. Esse aprendizado me preparou para lidar melhor com a
+complexidade de projetos futuros, ampliando minha confiança e
+competência técnica.
+
+O desenvolvimento do projeto também me fez perceber a importância de
+alinhar a teoria com a prática, exigindo esforço para aplicar
+conhecimentos de programação, design e gerenciamento em um contexto
+real. No futuro, pretendo aproveitar esse aprendizado para me tornar um
+profissional mais completo, capaz de colaborar em projetos que demandem
+integração entre diversas áreas e habilidades.
+
+\section{3 - PROJETOS AGES II -
+``PRO-MATA''}\label{projetos-ages-ii---pro-mata}
+
+\subsection{3.1 Introdução}\label{introduuxe7uxe3o-1}
+
+O Centro de Pesquisas e Proteção da Natureza (CPPN) Pró-Mata desempenha
+um papel essencial na preservação ambiental e também na promoção de
+atividades acadêmicas, turísticas e culturais. Para atender melhor esse
+público diverso, surgiu a necessidade de criar uma plataforma digital
+que centralize e facilite o acesso aos serviços oferecidos pelo centro.
+
+A iniciativa busca modernizar e tornar mais acessíveis processos que
+antes eram manuais ou fragmentados, como reservas de hospedagem,
+agendamento de atividades e organização de eventos. Com a plataforma,
+espera-se proporcionar mais praticidade e transparência aos visitantes,
+ao mesmo tempo em que se fortalece a gestão interna e se melhora a
+experiência de todos que têm contato com o Pró-Mata --- sejam
+estudantes, pesquisadores, turistas ou instituições parceiras.
+
+Mais do que uma solução tecnológica, este projeto representa um passo
+importante para aproximar o centro de sua comunidade, ampliando seu
+alcance e reforçando sua missão de unir conservação, educação e turismo
+sustentável.
+
+\subsection{3.2 Desenvolvimento do
+Projeto.}\label{desenvolvimento-do-projeto.}
+
+\textbf{Stakeholder do Projeto:}
+
+\begin{itemize}
+\item
+  Prof. Augusto Mussi Alvim
+\end{itemize}
+
+\textbf{Período de Execução}: Segundo semestre de 2025.
+
+Figura - Foto do time
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Repositório do código Fonte do Projeto}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/pro-mata}
+
+O código fonte está hospedado no GitLab, onde todo o desenvolvimento
+colaborativo é gerenciado.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{Banco de Dados utilizado}
+\end{enumerate}
+
+\url{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Banco\%20de\%20Dados}
+
+\begin{quote}
+Diagrama das tabelas do banco de dados.
+
+\textbf{Desenvolvimento}: Um container PostgreSQL simples que roda
+localmente. O Prisma ORM gerencia as migrações automaticamente.
+
+\textbf{Produção}: PostgreSQL com replicação master-slave, backups
+automáticos criptografados, e monitoramento futuro com Grafana e
+PostgreSQL exporter.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Arquitetura utilizada}
+\end{enumerate}
+
+https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura
+
+Baseando-se no que foi planejado para o nosso banco de dados,
+levantamento dos requisitos e o entendimento geral do time sobre o
+projeto a ser desenvolvido, optamos por uma arquitetura de
+Cliente-Servidor, onde há uma separação entre o frontend e backend.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  \textbf{Protótipos das telas desenvolvidas}
+\end{enumerate}
+
+https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Design
+
+Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
+das interfaces.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  \textbf{Tecnologias Utilizadas}
+\end{enumerate}
+
+\begin{quote}
+https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura
+
+\textbf{React 19}: Construção de interfaces declarativas com componentes
+reutilizáveis.
+
+\textbf{TypeScript:} Tipagem estática (configuração em tsconfig.json,
+moduleResolution: "bundler", baseUrl, paths @/*).
+
+\textbf{Vite 6} --- Dev server e build otimizados; plugin
+\textbf{@tanstack/router-plugin} com autoCodeSplitting e geração de
+src/routeTree.gen.ts; plugin \textbf{@tailwindcss/vite}.
+
+\textbf{Tailwind CSS (v4)} --- Utilitários CSS, tokens/temas em
+src/styles/globals.css (variações claro/escuro).
+
+\textbf{TanStack Router} --- Roteamento file-based em src/routes/**, com
+beforeLoad/guards, code-splitting e devtools.
+
+\textbf{TanStack Query} --- Cache e invalidação de dados; QueryClient
+injetado no contexto do Router.
+
+\textbf{shadcn/ui + Radix UI} --- Componentes acessíveis (dialog,
+popover, select, table, sheet, etc.) com variantes (CVA).
+
+\textbf{Zod + React Hook Form} --- Esquemas de validação tipados e
+formulários controlados.
+
+\textbf{Zustand} --- Estado leve e local (stores de UI e filtros).
+
+\textbf{Axios} --- Cliente HTTP com \textbf{interceptor} de autenticação
+(Bearer).
+
+\textbf{ESLint/Prettier} --- Lint e formatação padronizada.
+
+\textbf{Vitest} --- Testes unitários com run, watch e UI.
+
+\textbf{Node.js / npm} --- Toolchain e scripts de desenvolvimento.
+\end{quote}
+
+\subsection{3.3 Atividades desempenhadas pelo aluno no
+projeto}\label{atividades-desempenhadas-pelo-aluno-no-projeto-1}
+
+\textbf{3.3.1 Sprint 0}
+
+A Sprint 0 foi dedicada a alinhar a visão do produto com protótipos
+navegáveis no Figma e a colocar no ar os primeiros componentes do
+frontend, organizando o fluxo de telas e preparando a base visual para
+as próximas sprints.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Desenvolvimento no Figma: ajustes de mockups, criação de cards
+  compactos, animações no Prototype e botão de idioma.
+\item
+  Definição do \textbf{System Flow} (user flow/screen flow) para
+  orientar navegação e decisões de UI.
+\item
+  Implementação do \textbf{CardStatus} (enum de estados, ícones SVG,
+  fallback para status desconhecido e estilos com Tailwind).
+\item
+  Desenvolvimento do \textbf{CardsInfoOnHover} (branch \#44): estrutura
+  HTML, estilos com Tailwind, lógica de hover com useState, integração
+  de imagens mock, posicionamento na Home; revisão de tipagem, ajustes
+  com TanStack Router e \textbf{PR} entregue.
+\item
+  Ambientação/estudo do stack do frontend (React, TypeScript, Tailwind,
+  TanStack Router, Zustand, React Hook Form + Zod, JWT) e ajustes de
+  ambiente (VS Code, PostCSS, ícones).
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  \textbf{Figma} (mockups e Prototype)
+\item
+  \textbf{React} + \textbf{TypeScript}
+\item
+  \textbf{Tailwind CSS}
+\item
+  \textbf{TanStack Router}
+\item
+  \textbf{Zustand}
+\item
+  \textbf{React Hook Form} + \textbf{Zod}
+\item
+  \textbf{Git/GitHub}, \textbf{VS Code}, PostCSS, SVGs
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+\begin{itemize}
+\item
+  Protótipos navegáveis que alinham expectativas e guiam o backlog.
+\item
+  Componentes prontos e reutilizáveis (\textbf{CardStatus} e
+  \textbf{CardsInfoOnHover}), já padronizados visualmente.
+\item
+  Base de estilos, ícones e estados definida para acelerar novas telas.
+\item
+  PRs documentado que facilita revisão e evolução do código.
+\end{itemize}
+
+\textbf{3.3.2 Sprint 1}
+
+A Sprint 1 foi voltada a transformar os protótipos em telas navegáveis e
+consolidar a base do frontend. Houve foco em roteamento, componentes
+reutilizáveis (Carrossel, Cards) e padronização visual. Apesar da curva
+de aprendizado com TanStack Router, tipagem em TS e detalhes de
+Tailwind, o time encerrou a sprint com a Home estruturada e
+componentes-chave prontos para evoluir.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Estudo dirigido da stack (React + TypeScript, Tailwind, TanStack
+  Router, React Hook Form + Zod, JWT) e ajustes de ambiente (VS Code,
+  PostCSS, Montserrat, organização de assets/mocks).
+\item
+  \textbf{CardsInfoOnHover (\#44):} refinado e entregue via PR (tipagem
+  revisada, hover com estado, integração de imagens mock e
+  posicionamento na Home).
+\item
+  \textbf{CarouselComponent (\#43):} base implementada com navegação por
+  setas, miniaturas e exibição de 2 imagens por vez; controle de índices
+  para evitar overflow.
+\item
+  \textbf{Home (\#42):} estrutura inicial com Header/Footer, CTA e
+  imagem de destaque, alinhada aos protótipos.
+\item
+  \textbf{ExperienceCard (\#78):} esqueleto criado com props iniciais e
+  estados de loading usando react-spinners.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  \textbf{React} + \textbf{TypeScript}, \textbf{Tailwind CSS},
+  \textbf{TanStack Router}, \textbf{React Hook Form} + \textbf{Zod},
+  \textbf{JWT} (estudo/integração inicial).
+\item
+  \textbf{Figma} (referência de layout e fluxo).
+\item
+  \textbf{react-spinners}, \textbf{SVGs reutilizáveis} (ex.: ArrowSVG).
+\item
+  \textbf{VS Code}, \textbf{Git/GitHub}, \textbf{PostCSS}; fonte
+  \textbf{Montserrat} configurada; \textbf{public/} para mocks e
+  imagens.
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+\begin{itemize}
+\item
+  Home navegável e padronizada como base para novas seções.
+\item
+  Carrossel reutilizável (\#43) com UX funcional e regras de borda
+  implementadas.
+\item
+  CardsInfoOnHover (\#44) maduro e integrado, com PR documentado.
+\item
+  Base do ExperienceCard preparada para conectar a dados reais (props,
+  loading).
+\item
+  Padronização de ícones, diretórios (components/ui/svgs/) e uso
+  consistente de cores do global.css, aumentando a coesão visual do
+  projeto.
+\end{itemize}
+
+\textbf{3.3.3 Sprint 2}
+
+A Sprint 2 teve foco no desenvolvimento do componente ExperienceCard,
+refinando o design system da tela de reservas, ajustando detalhes
+visuais e preparando o componente para suportar diferentes tipos de
+experiências, já alinhado à arquitetura fullstack pensada para o
+projeto.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Criação da branch feature/experience-card a partir da develop.\\
+  Instalação e configuração do react-spinners para estados de loading no
+  card.
+\item
+  Implementação do componente ExperienceCard com layout dinâmico
+  conforme experience.category (trilha, hospedagem, laboratório,
+  evento).
+\item
+  Estruturação do layout interno em duas colunas, com imagem, labels,
+  descrição e botão ``Adicionar ao carrinho''.
+\item
+  Criação de mocks para as quatro categorias e exibição em grid na rota
+  /reserve.
+\item
+  Aplicação de cores padronizadas via global.css e criação da variável
+  -\/-cor-card-labels.
+\item
+  Ajustes visuais (sombra inset, scroll invisível para descrições
+  longas, padding/margin, z-index).
+\item
+  Configuração de labels com ícones dinâmicos via Lucide React.
+\item
+  Substituição de textos estáticos por tags de Locale, preparando o
+  componente para internacionalização.
+\item
+  Revisão de PR com base em feedback técnico, remoção de
+  imports/variáveis não utilizados.
+\item
+  Correção do CI ao limpar declarações não utilizadas em arquivos
+  TypeScript.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  React + TypeScript, Tailwind CSS.
+\item
+  Lucide React (ícones), react-spinners.
+\item
+  TanStack Router (rota /reserve).
+\item
+  Git/GitHub (branching, PRs, code review).
+\item
+  global.css (tokens de cor e variáveis globais).
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+\begin{itemize}
+\item
+  ExperienceCard funcional e flexível, pronto para receber dados reais e
+  suportar diferentes categorias de experiência.
+\item
+  Refinamento do design system (cores globais, sombras, labels,
+  comportamento de scroll), aumentando a consistência visual.
+\item
+  Preparação da tela de reservas com mocks e grid montado, facilitando a
+  futura integração com backend.
+\item
+  Melhoria na qualidade do código e estabilidade do pipeline de CI, a
+  partir da limpeza de imports e variáveis não utilizados.
+\item
+  Avanço na compreensão da arquitetura fullstack e do uso de TanStack
+  Query para cache e invalidação de dados (estudo inicial).
+\end{itemize}
+
+\textbf{3.3.4 Sprint 3}
+
+A Sprint 3 marcou o início efetivo da minha atuação em testes de
+frontend, redirecionando parte do foco do desenvolvimento de componentes
+para a criação de uma base de qualidade com testes unitários,
+entendimento da infraestrutura de mocks e organização do ecossistema de
+testes do projeto.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Participação em reunião com os AGES II para definição e divisão das
+  tasks de testes.
+\item
+  Resolução de conflitos de merge entre branches do frontend
+  relacionados à área de testes.
+\item
+  Estudo da estrutura de testes do projeto, compreendendo a separação
+  entre src/test/msw (infraestrutura de mocks) e tests/unit (testes
+  reais).
+\item
+  Aprofundamento no papel de cada ferramenta:
+
+  \begin{itemize}
+  \item
+    Node.js como ambiente de execução.
+  \item
+    Vite como dev server e ferramenta de build.
+  \item
+    Vitest como test runner.
+  \item
+    React Testing Library para simulação de uso em jsdom.
+  \end{itemize}
+\item
+  Criação do primeiro teste unitário real cobrindo o componente
+  CardStatus (verificação de renderização de label conforme status).
+\item
+  Início da implementação dos testes do componente ExperienceCard,
+  estruturando cenários iniciais de renderização.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  Vitest (test runner).
+\item
+  React Testing Library (renderização e queries).
+\item
+  MSW (infraestrutura de mocks, estudo da pasta src/test/msw).
+\item
+  Node.js, Vite (ambiente de execução dos testes).
+\item
+  Git/GitHub (resolução de conflitos e organização de branches).
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+\begin{itemize}
+\item
+  Estrutura inicial de testes unitários aplicada em um componente já
+  utilizado na Home (CardStatus).
+\item
+  Organização e compreensão da arquitetura de testes do projeto,
+  facilitando a evolução futura de testes em outros componentes.
+\item
+  Suporte na resolução de conflitos de merge, contribuindo para a
+  estabilidade da branch principal.
+\item
+  Primeiros passos na criação de testes para o ExperienceCard,
+  preparando o terreno para aumentar a cobertura de testes dos
+  componentes de reserva.
+\end{itemize}
+
+\textbf{3.3.5 Sprint 4}
+
+A Sprint 4 deu continuidade ao trabalho iniciado em testes, consolidando
+o aprendizado em Vitest e Testing Library, expandindo a cobertura de
+componentes críticos (ExperienceCard e Tela de Reservas) e colaborando
+com a estabilidade do código na reta final da disciplina.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Participação em reunião com os AGES II para redefinir e redistribuir
+  as tasks de testes.
+\item
+  Solução de conflitos de merge relacionados a alterações simultâneas em
+  componentes e arquivos de teste.
+\item
+  Continuidade no estudo da estrutura de testes (src/test/msw x
+  tests/unit), reforçando quando utilizar mocks e quando testar
+  comportamento real.
+\item
+  Implementação dos testes do ExperienceCard, cobrindo cenários de
+  renderização e interações básicas.
+\item
+  Início dos testes da Tela de Reservas, explorando a simulação de
+  comportamento do usuário (renderização do filtro, lista de
+  experiências, elementos principais da página).
+\item
+  Prática recorrente de execução, depuração e ajuste de testes,
+  aprimorando a leitura de mensagens de erro e logs do Vitest.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  Vitest (execução, watch e depuração de testes).
+\item
+  React Testing Library (simulação de interação e queries na tela).
+\item
+  MSW (estudo e uso como infraestrutura de mocks quando necessário).
+\item
+  Node.js, Vite (ambiente de desenvolvimento e testes).
+\item
+  Git/GitHub (merge, resolução de conflitos e versionamento dos arquivos
+  de teste).
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+\begin{itemize}
+\item
+  Ampliação da cobertura de testes em componentes centrais do fluxo de
+  reservas (ExperienceCard e Tela de Reservas).
+\item
+  Maior estabilidade e confiança no frontend, graças à validação
+  automatizada de comportamento e renderização.
+\item
+  Consolidação do entendimento sobre o ecossistema de testes do projeto,
+  facilitando a continuidade do trabalho de QA nas próximas sprints.
+\item
+  Evolução pessoal em testes automatizados de frontend, reduzindo a
+  insegurança inicial e preparando o caminho para atuar com mais
+  autonomia nessa área.
+\end{itemize}
+
+\subsection{3.4. Conclusão}\label{conclusuxe3o-1}
+
+O desenvolvimento do Pró-Mata marcou um avanço significativo na minha
+formação, não apenas pelo volume de tecnologias novas que explorei, mas
+pela maneira como aprendi a conectar cada parte do sistema. Se nas
+primeiras sprints eu transformava protótipos em telas navegáveis, nas
+sprints seguintes aprendi a compreender a engenharia por trás do
+produto: estado, rotas, validação, testes, arquitetura de componentes e
+padrões visuais. Essa combinação elevou meu entendimento de
+desenvolvimento web para um nível que eu não tinha alcançado antes.
+
+No aspecto técnico, a AGES II ampliou meu repertório de forma prática.
+Conheci ferramentas que até então eram completamente novas para mim ---
+Zustand, Zod, TanStack Router, TanStack Query, Axios --- e cada uma
+delas passou a fazer sentido à medida que eu entendia seu papel dentro
+da aplicação. O Tailwind, que eu inicialmente julgava confuso, se tornou
+uma das ferramentas que mais gostei de aprender, acelerando minha forma
+de pensar interface, padronizando cores, sombras, espaçamentos e
+mantendo o design system coeso. Também vivenciei minha primeira
+experiência consistente com testes de frontend. Foi uma jornada difícil
+e frustrante, especialmente na Sprint 4, quando percebi a complexidade
+real por trás de mocks, queries, coverage e simulação de interação com a
+interface. Embora eu tenha recorrido ao apoio da IA para concluir parte
+dos testes, essa experiência deixou claro o quanto eu preciso evoluir
+nessa área --- e essa consciência, por si só, já foi um aprendizado
+importante.
+
+Do ponto de vista de soft skills, houve um crescimento marcante. A
+diferença entre minha postura no AGES I e no AGES II foi evidente:
+participei mais, perdi o receio de fazer perguntas, deixei de me sentir
+deslocado tecnicamente e me tornei mais confiante para propor ideias e
+assumir tarefas desafiadoras. A experiência de criar fluxos, protótipos
+e decisões visuais no Figma reforçou meu papel no time e me fez perceber
+como posso contribuir não apenas com código, mas também com visão de
+produto. Ao mesmo tempo, desenvolvi uma comunicação mais madura,
+melhorei minhas descrições de PRs e passei a manter um processo de
+trabalho mais organizado e previsível.
+
+Em relação às disciplinas cursadas, percebi uma conexão real com
+conteúdos acadêmicos. Arquitetura e Projeto de Software ajudaram a
+entender o sistema como um todo, seus módulos, responsabilidades e
+padrões. Sistemas Operacionais, por outro lado, conectou vários pontos
+sobre como navegadores lidam com processos, abas e concorrência --- algo
+que, mesmo indiretamente, influenciou minha compreensão sobre estados,
+carregamento e estrutura de aplicações web. Foi um semestre em que
+estudei mais do que nunca, muitas vezes indo além do necessário, movido
+pela curiosidade de entender como cada peça funcionava por dentro.
+
+Sobre o projeto em si, o Pró-Mata foi, sem dúvidas, o projeto mais
+extenso e com o maior escopo que já participei até agora. Foi uma
+experiência organizada, visualmente interessante e tecnicamente
+desafiadora, com espaço para evoluir tanto no design quanto na lógica.
+Trabalhar nesse sistema ampliou meu repertório como desenvolvedor e me
+permitiu vivenciar, de forma concreta, a construção de um produto que
+exige planejamento, consistência e integração entre várias etapas do
+desenvolvimento.
+
+Como autocrítica, acredito que poderia ter pedido mais ajuda em alguns
+momentos. Por mergulhar profundamente em cada tecnologia, acabei
+prolongando tarefas que poderiam ter avançado mais rápido. Por outro
+lado, esse tempo investido me deu um aprendizado sólido, e hoje, com
+essa bagagem, sinto que está muito mais concreto meu entendimento de
+tudo que compõe um sistema.
+
+Agora sei construir componentes complexos, estruturar fluxos de
+navegação, padronizar um design system, escrever PRs melhores,
+raciocinar sobre arquitetura de estados e, mesmo lutando com testes, já
+compreendo o caminho para dominá-los.
+
+De forma geral, o que fica da AGES II é a sensação de evolução genuína.
+Evoluí tecnicamente, evoluí como membro de equipe e evoluí no
+entendimento de como transformar um sistema do Figma até o código final.
+Sigo para as próximas etapas com mais confiança, mais repertório e uma
+clareza maior sobre meu papel como desenvolvedor. Ao mesmo tempo,
+reconheço que ainda me sinto apreensivo quanto à transição para o AGES
+III, especialmente por não dominar completamente áreas como
+infraestrutura e arquitetura. Ainda assim, vejo isso não como um
+obstáculo, mas como um próximo passo natural: conhecimentos que posso
+alcançar com estudo, prática e dedicação. Estou animado para o que vem a
+seguir e confiante de que essa trajetória continuará ampliando minhas
+habilidades e minha maturidade profissional.
+
+\section{4 - PROJETOS AGES III -
+``FINUP''}\label{projetos-ages-iii---finup}
+
+\subsection{4.1 Introdução}\label{introduuxe7uxe3o-2}
+
+A dificuldade de entender, organizar e melhorar a própria vida
+financeira é uma dor muito comum no Brasil. Muitos brasileiros chegam ao
+fim do mês sem saber exatamente para onde o dinheiro foi --- não por
+falta de interesse, mas porque nunca foram ensinados, de forma simples e
+prática, a cuidar do próprio dinheiro. Diante desse cenário, surgiu a
+proposta do FinUp: um aplicativo mobile que funciona como um "copiloto
+financeiro do brasileiro", ajudando o usuário a controlar seus gastos,
+tomar melhores decisões no dia a dia e aprender finanças de forma leve,
+gamificada e sem julgamento.
+
+A solução une organização financeira, inteligência artificial e educação
+financeira em uma experiência acessível, jovem e prática. Entre suas
+principais funcionalidades estão o controle de receitas e despesas, um
+diagnóstico financeiro inicial, um indicador de saúde financeira (FinUp
+Score), um assistente de IA para orientação no cotidiano, trilhas de
+educação financeira gamificadas e um painel administrativo web.
+
+Mais do que uma ferramenta de controle de gastos, o FinUp representa uma
+iniciativa de impacto social, buscando democratizar o acesso à educação
+financeira e empoderar seus usuários para que construam uma relação mais
+saudável e consciente com o próprio dinheiro.
+
+\subsection{3.2 Desenvolvimento do
+Projeto.}\label{desenvolvimento-do-projeto.-1}
+
+\textbf{Stakeholders do Projeto:}
+
+\begin{itemize}
+\item
+  Vitor Oppermann
+\item
+  Diogo Ninov
+\end{itemize}
+
+\textbf{Período de Execução}: Segundo semestre de 2026.
+
+\textbf{Professor Orientador:} Afonso Sales
+
+Figura 3 - Foto do time
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Repositório do código Fonte do Projeto}
+\end{enumerate}
+
+Wiki: \url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki}
+
+Frontend Web:
+\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-web}
+
+Frontend Mobile:
+\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-mobile}
+
+Backend:
+\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-backend}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{Banco de Dados utilizado}
+\end{enumerate}
+
+\begin{quote}
+Link para a wiki do banco:
+\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Banco\%20de\%20Dados}
+
+O banco de dados do FinUp utiliza o modelo relacional, organizado em
+três domínios: perfil do usuário, controle financeiro e educação
+financeira gamificada . A escolha se justifica pela natureza estruturada
+e interligada dos dados, garantindo integridade e consistência por meio
+de chaves primárias e estrangeiras. As convenções adotadas incluem
+nomenclatura em inglês com PascalCase e campos de auditoria, assegurando
+padronização e facilitando a evolução do banco.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Arquitetura utilizada}
+\end{enumerate}
+
+Link para wiki da arquitetura:
+\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/arquitetura}
+
+A arquitetura do FinUp foi dividida em quatro repositórios: finup-web
+(React + Vite) para o painel administrativo, finup-mobile (React Native
++ Expo) para o aplicativo do usuário, finup-backend (Java Spring +
+Python para IA) para a API e lógica de negócio, e finup-infra para
+gerenciamento da infraestrutura {[}1{]}. A infraestrutura é hospedada na
+AWS, utilizando EC2 para os containers Docker (frontend web, backend e
+PostgreSQL), Cognito para autenticação de usuários, Bedrock como motor
+central de IA (chatbot, trilhas e análise financeira), Lambda para
+requisições específicas do painel admin, e EBS para armazenamento do
+banco de dados. Além disso, foi adotado o Railforge como ferramenta de
+padronização do fluxo de desenvolvimento nas diferentes stacks do
+projeto.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  \textbf{Protótipos das telas desenvolvidas}
+\end{enumerate}
+
+https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Design(Mockups)
+
+Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
+das interfaces.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  \textbf{Tecnologias Utilizadas}
+\end{enumerate}
+
+Web (finup-web): React, Vite, Tailwind CSS, TanStack Router, Axios.
+
+Mobile (finup-mobile): React Native, Expo, Expo Router.
+
+\begin{quote}
+Backend (finup-backend): Java, Spring Boot, Python, PostgreSQL,
+Swagger/OpenAPI.
+
+Infraestrutura e DevOps (finup-infra): Docker, Docker Compose, GitHub
+Actions (CI/CD), Railforge.
+
+Serviços AWS: EC2 (hospedagem dos containers), Cognito (autenticação),
+Bedrock (motor de IA), Lambda (requisições do painel admin), EBS
+(armazenamento do banco).
+\end{quote}
+
+\subsection{3.3 Atividades desempenhadas pelo aluno no
+projeto}\label{atividades-desempenhadas-pelo-aluno-no-projeto-2}
+
+\textbf{3.3.1 Sprint 0}
+
+A Sprint 0 foi dedicada à definição das bases arquiteturais e
+organizacionais do projeto FinUp, incluindo a análise da arquitetura do
+sistema, a estruturação dos repositórios e ambientes de desenvolvimento,
+e o estudo da infraestrutura em nuvem que sustentará a aplicação.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Análise e definição da arquitetura inicial do FinUp, considerando as
+  camadas web, mobile, backend e infraestrutura.
+\item
+  Estudo e decisão sobre a estratégia de organização dos repositórios
+  (monorepo x multirepo), levando em conta a divisão entre as equipes
+  AGES II, III e IV.
+\item
+  Criação dos repositórios Web, Mobile, Backend e Infra no GitHub.
+\item
+  Configuração das branches main e develop com proteções, regras de
+  approval e squash merge.
+\item
+  Organização dos times e definição de permissões de acesso por equipe
+  no GitHub.
+\item
+  Estudo comparativo de serviços AWS para hospedagem do backend (EC2,
+  ECS Fargate e Elastic Beanstalk).
+\item
+  Início da configuração do LocalStack para simulação e testes locais de
+  serviços AWS.
+\item
+  Estudos complementares sobre Spring Boot, CI/CD e coleta de dados
+  financeiros.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+\begin{itemize}
+\item
+  GitHub (repositórios, branches, permissões), AWS (EC2, ECS Fargate,
+  Elastic Beanstalk), LocalStack.
+\end{itemize}
+
+\textbf{Contribuições no desenvolvimento:}
+
+Esta sprint representou o alicerce técnico e organizacional do projeto.
+A principal contribuição foi estabelecer uma estrutura de repositórios
+clara e bem protegida, garantindo que as três equipes pudessem trabalhar
+de forma paralela e organizada. O estudo dos serviços AWS permitiu uma
+visão inicial sobre as possibilidades de hospedagem e deploy, enquanto a
+configuração do LocalStack abriu caminho para testes locais sem depender
+de recursos em nuvem. Um desafio relevante foi a indefinição inicial
+sobre a divisão das equipes, que impactou diretamente a escolha entre
+monorepo e multirepo, reforçando o aprendizado de que decisões
+arquiteturais estão intimamente ligadas à organização das pessoas no
+projeto.
+
+\textbf{3.3.2 Sprint 1}
+
+A Sprint 1 foi dedicada à padronização do fluxo de desenvolvimento com a
+adoção do Railforge, ao aprofundamento em Docker e configuração do
+ambiente local do backend, à implantação das pipelines de CI nos
+repositórios e ao apoio na integração dos primeiros fluxos funcionais do
+aplicativo mobile.
+
+\textbf{Atividades Desempenhadas:}
+
+\begin{itemize}
+\item
+  Análise da adoção do Railforge no fluxo de desenvolvimento do FinUp,
+  abrangendo requisitos, escopo, validações e commits.
+\item
+  Definição do Railforge em modo educativo, sem bloqueios rígidos para
+  os desenvolvedores.
+\item
+  Estruturação documental e criação das variantes Basic, Backend,
+  Frontend e Mobile do Railforge, com customização conforme cada stack.
+\item
+  Estudo e aplicação de conceitos de Docker, incluindo imagens,
+  containers, portas, redes, Dockerfile e Docker Compose.
+\item
+  Configuração do ambiente local do backend com PostgreSQL e execução da
+  API Spring Boot.
+\item
+  Validação dos endpoints de health, Swagger e OpenAPI.
+\item
+  Configuração da CI para ser disparada ao commitar em qualquer branch,
+  com abertura de PRs nos repositórios Mobile, Web e Backend.
+\item
+  Análise da navegação do FinUp Mobile com Expo Router.
+\item
+  Integração e validação dos fluxos de login e cadastro no mobile.
+\item
+  Resolução de conflitos com a branch develop, ajustes de dependências e
+  correção da dependência expo-font no CI.
+\item
+  Realização de code reviews em PRs da equipe.
+\end{itemize}
+
+\textbf{Ferramentas Utilizadas:}
+
+GitHub (PRs, branches, CI), Docker, Docker Compose, Railforge, Spring
+Boot, PostgreSQL, Swagger/OpenAPI, Expo Router.
+
+\textbf{Contribuições no desenvolvimento:}
+
+Esta sprint marcou a transição do planejamento para a execução prática
+do projeto. A principal contribuição foi a adoção e customização do
+Railforge, criando variantes específicas para cada stack e garantindo
+consistência no fluxo de trabalho das equipes. A configuração do
+ambiente local com Docker e a validação da API Spring Boot permitiram
+que o backend fosse executado de forma independente por qualquer
+desenvolvedor. A implantação das pipelines de CI trouxe automação e
+qualidade, embora tenha exigido a resolução de problemas como falhas com
+expo-font e conflitos no package-lock. No mobile, o apoio na integração
+dos fluxos de login e cadastro contribuiu para a estabilização das
+primeiras telas funcionais. Entre os principais aprendizados, destaca-se
+que ferramentas de padronização precisam ser adaptadas ao contexto de
+cada stack, e que o domínio de Docker e CI são fundamentais para a
+produtividade em equipes distribuídas.
+
+\section{REFERÊNCIAS}\label{referuxeancias}
+
+\begin{itemize}
+\item
+  React: \url{https://react.dev}
+\item
+  TypeScript: \url{https://www.typescriptlang.org/docs/}
+\item
+  Tailwind CSS: \url{https://tailwindcss.com/docs}
+\item
+  TanStack Router: \url{https://tanstack.com/router/latest}
+\item
+  Zustand:
+  \url{https://docs.pmnd.rs/zustand/getting-started/introduction}
+\item
+  Zod: \url{https://zod.dev}
+\item
+  Vite: \url{https://vitejs.dev/guide/}
+\item
+  Git --- Documentação: \url{https://git-scm.com/doc}
+\item
+  React Native: \url{https://reactnative.dev/docs/getting-started}
+\item
+  Expo: \url{https://docs.expo.dev}
+\item
+  Expo Router: \url{https://docs.expo.dev/router/introduction/}
+\item
+  Axios: \url{https://axios-http.com/docs/intro}
+\item
+  Java: \url{https://docs.oracle.com/en/java/}
+\item
+  Spring Boot:
+  \url{https://docs.spring.io/spring-boot/documentation.html}
+\item
+  \href{PostgreSQL:\%20https://www.postgresql.org/docs/}{PostgreSQL:
+  https://www.postgresql.org/docs/}
+\item
+  Swagger / OpenAPI: https://swagger.io/docs/
+\item
+  Docker: \url{https://docs.docker.com}
+\item
+  AWS EC2: \url{https://docs.aws.amazon.com/ec2/}
+\item
+  AWS Cognito: \url{https://docs.aws.amazon.com/cognito/}
+\item
+  AWS Bedrock: \url{https://docs.aws.amazon.com/bedrock/}
+\item
+  AWS Lambda: \url{https://docs.aws.amazon.com/lambda/}
+\item
+  AWS EBS: \url{https://docs.aws.amazon.com/ebs/}
+\item
+  LocalStack: \url{https://docs.localstack.cloud/overview/}
+\end{itemize}
+
+\end{document}
