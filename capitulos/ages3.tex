@@ -65,7 +65,7 @@ saudável e consciente com o próprio dinheiro.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{imagens/equipe-finup.jpeg}
+  \includegraphics[width=\textwidth]{imagens/Finup/equipe-finup.jpeg}
   \caption{Equipe do projeto FinUp}
   \label{fig:equipe-finup}
   \fonte{Acervo pessoal.}
@@ -134,7 +134,7 @@ componentes da solução e o papel dos serviços AWS previstos na infraestrutura
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth]{imagens/diagrama-arquitetura-descricao.png}
+  \includegraphics[width=0.95\textwidth]{imagens/Finup/diagrama-arquitetura-descricao.png}
   \caption{Arquitetura e serviços AWS do FinUp}
   \label{fig:arquitetura-finup}
   \fonte{Acervo do projeto FinUp.}
@@ -174,6 +174,59 @@ Serviços AWS: EC2 (hospedagem dos containers), Cognito (autenticação),
 Bedrock (motor de IA), Lambda (requisições do painel admin), EBS
 (armazenamento do banco).
 \end{quote}
+
+\subsection{Processo de trabalho}
+
+O desenvolvimento do FinUp foi organizado em sprints com duração variável entre
+duas e quatro semanas, com média aproximada de três semanas. A experiência com
+uma sprint de apenas duas semanas evidenciou que ciclos muito curtos podem
+pressionar a implementação e afetar a estabilidade das entregas; esse aprendizado
+passou a orientar o planejamento dos ciclos seguintes.
+
+Os encontros presenciais ocorriam semanalmente, às sextas-feiras, das 19h15 às
+22h30, e eram conduzidos por William Weyh, integrante da AGES IV. Esses encontros
+combinavam alinhamento, retrospectiva e acompanhamento do trabalho em andamento.
+Inicialmente, o time tentou adotar reuniões diárias, mas percebeu que a prática
+não gerava o nível de visibilidade esperado. Em substituição, passou a realizar
+uma revisão coletiva do quadro Kanban projetado durante os encontros presenciais:
+cada tarefa pendente era revisitada para atualização de status, identificação de
+impedimentos e definição de próximos responsáveis. A mudança tornou o
+acompanhamento mais objetivo e adequado à rotina da equipe.
+
+O ClickUp foi utilizado para o gerenciamento das atividades por meio de um
+quadro Kanban. Os integrantes podiam atribuir tarefas a si próprios e, durante a
+revisão coletiva do quadro, demandas sem responsável eram apresentadas ao time
+para que alguém pudesse assumi-las. Reuniões no Discord ocorriam de maneira
+pontual, principalmente nas vésperas das apresentações ao cliente, para apoiar a
+integração e a preparação das entregas.
+
+O fluxo de desenvolvimento partia da branch \texttt{develop}. Para cada tarefa,
+o integrante criava uma branch específica seguindo os prefixos \texttt{feat},
+\texttt{fix}, \texttt{docs}, \texttt{refactor} ou \texttt{test}; registrava os
+avanços por meio de commits no padrão \texttt{tipo: descrição curta}; e abria um
+Pull Request para integração. O template de Pull Request, estruturado pelos
+integrantes da AGES III, solicitava descrição da mudança, issue relacionada,
+tipo de alteração, evidência visual, instruções de teste e checklist de
+validação. Esse checklist incluía lint, verificação de tipos, testes em Android
+e iOS quando aplicáveis e a confirmação de que não havia segredos em variáveis
+públicas de ambiente. Após revisão, ajustes e eventual rebase, as alterações eram
+integradas à \texttt{develop}.
+
+O Railforge foi empregado como orientação documental para o uso de IA no
+desenvolvimento, reunindo padrões e instruções específicos do projeto. Antes das
+integrações e demonstrações, as funcionalidades eram verificadas com Expo Go em
+dispositivos físicos ou emuladores, além do uso de Docker e Swagger para validar
+o ambiente e os endpoints. O projeto também possuía pipeline de integração
+contínua; contudo, a experiência revelou espaço para fortalecer seus guardrails
+e automatizar mais verificações.
+
+Como mecanismo adicional de validação, passaram a ser realizadas apresentações
+semanais das funcionalidades de maior valor, normalmente uma ou duas semanas
+antes da entrega ao cliente. A própria pessoa responsável pela implementação
+apresentava a funcionalidade, que era debatida e validada pelo restante da
+equipe. Essa prática antecipou a identificação de ajustes, aumentou a
+transparência sobre o andamento das sprints e ajudou a garantir que os principais
+incrementos estivessem prontos com antecedência.
 
 \section{Atividades desempenhadas pelo aluno no projeto}
 
@@ -375,7 +428,7 @@ construção da tela inicial e do fluxo de conversa do Chatbot.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{imagens/mockup-chatbot.png}
+  \includegraphics[width=\textwidth]{imagens/Finup/mockup-chatbot.png}
   \caption{Mockups da tela inicial e do fluxo de conversa do Chatbot}
   \label{fig:mockup-chatbot}
   \fonte{Acervo do projeto FinUp.}
@@ -470,7 +523,7 @@ sprint.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{imagens/mockup-analise.png}
+  \includegraphics[width=\textwidth]{imagens/Finup/mockup-analise.png}
   \caption{Mockups das telas Home e Análise do FinUp}
   \label{fig:mockup-analise}
   \fonte{Acervo do projeto FinUp.}
