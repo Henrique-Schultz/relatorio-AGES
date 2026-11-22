@@ -30,14 +30,38 @@ saudável e consciente com o próprio dinheiro.
 
 \begin{itemize}
 \item
-  Vitor Oppermann
+  \href{https://tools.ages.pucrs.br/vitor.oppermann}{Vitor Oppermann}
 \item
-  Diogo Ninov
+  \href{https://tools.ages.pucrs.br/diogo.ninov}{Diogo Ninov}
 \end{itemize}
 
 \textbf{Período de Execução}: Segundo semestre de 2026.
 
-\textbf{Professor Orientador:} Afonso Sales
+\textbf{Professor Orientador:} Dr. Afonso Sales
+
+\textbf{Equipe do Projeto:}
+
+\begin{description}
+\item[AGES II]
+  \href{https://tools.ages.pucrs.br/vicente.goldani}{Vicente Goldani};
+  \href{https://tools.ages.pucrs.br/stefan.chagas}{Stefan Chagas};
+  \href{https://tools.ages.pucrs.br/baltazar.sandro}{Sandro Baltazar};
+  \href{https://tools.ages.pucrs.br/lucas.merlini}{Lucas Marchese};
+  \href{https://tools.ages.pucrs.br/joao.bonatto}{João Vitor Bonatto};
+  \href{https://tools.ages.pucrs.br/tavares.gabriel}{Gabriel Tavares}.
+\item[AGES III]
+  \href{https://tools.ages.pucrs.br/joao.moreira}{João Vitor Moreira};
+  \href{https://tools.ages.pucrs.br/henrique.schultz}{Henrique Schultz};
+  \href{https://tools.ages.pucrs.br/marco.oliveira}{Marco Laimer};
+  \href{https://tools.ages.pucrs.br/kaua.souza}{Kauã Rodrigues}.
+\item[AGES IV]
+  \href{https://tools.ages.pucrs.br/gabriel.moura}{Gabriel Moura};
+  \href{https://tools.ages.pucrs.br/nicolas.tanure}{Nicolas Tanure};
+  \href{https://tools.ages.pucrs.br/gustavo.azambuja002}{Gustavo Henrique};
+  \href{https://tools.ages.pucrs.br/william.weyh}{William Weyh};
+  \href{https://tools.ages.pucrs.br/israel.garcia}{Israel Garcia};
+  \href{https://tools.ages.pucrs.br/guilherme.santos}{Guilherme Azevedo dos Santos}.
+\end{description}
 
 \begin{figure}[H]
   \centering
@@ -105,7 +129,16 @@ central de IA (chatbot, trilhas e análise financeira), Lambda para
 requisições específicas do painel admin, e EBS para armazenamento do
 banco de dados. Além disso, foi adotado o Railforge como ferramenta de
 padronização do fluxo de desenvolvimento nas diferentes stacks do
-projeto.
+projeto. A Figura~\ref{fig:arquitetura-finup} apresenta a organização dos
+componentes da solução e o papel dos serviços AWS previstos na infraestrutura.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{imagens/diagrama-arquitetura-descricao.png}
+  \caption{Arquitetura e serviços AWS do FinUp}
+  \label{fig:arquitetura-finup}
+  \fonte{Acervo do projeto FinUp.}
+\end{figure}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -337,6 +370,16 @@ forma compatível com a arquitetura MVVM e passou a contemplar os principais
 elementos do fluxo de conversa, como estados de interação, respostas simuladas,
 animações e rolagem automática. Esse trabalho deixou uma base visual e
 estrutural preparada para a conexão futura com os serviços de IA e backend.
+A Figura~\ref{fig:mockup-chatbot} apresenta os mockups que orientaram a
+construção da tela inicial e do fluxo de conversa do Chatbot.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imagens/mockup-chatbot.png}
+  \caption{Mockups da tela inicial e do fluxo de conversa do Chatbot}
+  \label{fig:mockup-chatbot}
+  \fonte{Acervo do projeto FinUp.}
+\end{figure}
 
 Além da implementação da funcionalidade, a sprint contribuiu para amadurecer o
 processo de desenvolvimento do projeto. A atualização das orientações do
@@ -421,6 +464,17 @@ separando os elementos visuais da tela, os componentes de movimentação e o
 gerenciamento de seu estado. A inclusão do carrossel horizontal e dos filtros
 temporais permitiu organizar a apresentação das movimentações financeiras de
 forma mais clara e alinhada à proposta do FinUp.
+A Figura~\ref{fig:mockup-analise} apresenta os mockups utilizados como
+referência visual para a Home e para a tela de Análise desenvolvida durante a
+sprint.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imagens/mockup-analise.png}
+  \caption{Mockups das telas Home e Análise do FinUp}
+  \label{fig:mockup-analise}
+  \fonte{Acervo do projeto FinUp.}
+\end{figure}
 
 A sprint também exigiu uma recuperação completa do ambiente de desenvolvimento
 após a falha do SSD do notebook. Embora tenha representado um impedimento
