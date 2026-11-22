@@ -1,4 +1,4 @@
-\chapter{AGES III}
+\chapter[AGES III --- FinUp]{AGES III --- \enquote{FinUp}}
 
 \section{Introdução}
 
@@ -39,11 +39,12 @@ saudável e consciente com o próprio dinheiro.
 
 \textbf{Professor Orientador:} Afonso Sales
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imagens/equipe-finup.jpeg}
   \caption{Equipe do projeto FinUp}
   \label{fig:equipe-finup}
+  \fonte{Acervo pessoal.}
 \end{figure}
 
 \begin{enumerate}
@@ -549,6 +550,97 @@ entre mobile, backend e banco de dados.
 
 \section{Conclusão}
 
-% A conclusão da AGES III será redigida após a finalização do projeto FinUp.
+A experiência no projeto FinUp representou uma mudança importante na minha
+trajetória dentro da AGES. Diferentemente das etapas anteriores, em que minha
+atuação esteve mais concentrada em desenvolvimento de interfaces, prototipação e
+testes de frontend, a AGES III exigiu uma visão mais ampla do sistema. Passei a
+lidar com decisões de arquitetura, configuração de ambientes, infraestrutura,
+integração entre aplicações mobile e backend, banco de dados, autenticação,
+integração contínua e ferramentas de padronização do trabalho.
+
+No início do projeto, uma das principais barreiras foi a insegurança em assumir
+atividades relacionadas à arquitetura, infraestrutura e revisão de código. Eu
+questionava se teria conhecimento suficiente para contribuir nessas áreas e,
+principalmente, para analisar entregas de outros integrantes quando ainda não me
+sentia completamente confiante nas minhas próprias implementações. A convivência
+com os demais alunos da AGES III, entretanto, mudou essa percepção. Compreendi
+que o trabalho em equipe não depende de cada pessoa saber todas as respostas,
+mas da disposição coletiva para investigar problemas, pesquisar, pedir ajuda,
+testar hipóteses e aprender continuamente. Essa mudança de perspectiva foi um
+dos aprendizados mais significativos da experiência.
+
+Uma contribuição importante para o projeto ocorreu na análise da estratégia de
+organização dos repositórios. Inicialmente, a proposta de utilizar um monorepo
+parecia interessante por ser uma abordagem que eu ainda não havia utilizado.
+Porém, ao aprofundar o estudo e considerar a realidade de uma equipe com
+aproximadamente dezoito integrantes, camadas tecnológicas distintas e diferentes
+grupos de trabalho, concluí que a estrutura multirepo seria mais adequada. A
+separação entre os repositórios Web, Mobile, Backend e Infra favoreceu a
+delimitação de responsabilidades, a organização dos Pull Requests, o controle de
+permissões e a autonomia de cada frente de desenvolvimento. Essa decisão mostrou
+que escolhas arquiteturais não devem ser guiadas apenas por tendências ou
+preferências técnicas, mas pelo contexto humano e organizacional do projeto.
+
+Também fui surpreendido positivamente pelos temas de infraestrutura e
+inteligência artificial. Ao estudar a AWS, percebi como a separação de serviços
+especializados facilita a compreensão da infraestrutura: cada componente possui
+uma responsabilidade clara e se integra aos demais para formar a solução como um
+todo. Em relação à IA, compreendi que integrar recursos inteligentes a uma
+aplicação não exige, necessariamente, domínio prévio de todo o campo de
+aprendizado de máquina. Exige, principalmente, capacidade de integrar APIs,
+formular instruções adequadas, validar respostas e considerar aspectos de
+segurança, como proteção contra \textit{prompt injection}, privacidade e
+confiabilidade das informações retornadas.
+
+Com o avanço do FinUp, minha atuação aproximou-se novamente do desenvolvimento
+de funcionalidades, especialmente no aplicativo mobile. A implementação das
+telas de Chatbot e Análise, da experiência de alertas financeiros e de elementos
+como o FinUp Score permitiu aplicar a arquitetura MVVM na prática e aprofundar o
+entendimento sobre separação de responsabilidades, estado de interface,
+integração com APIs e tratamento de falhas. Ao mesmo tempo, o trabalho com
+Docker, Spring Boot, PostgreSQL, AWS Cognito, migrations, Expo e testes em
+dispositivos Android ampliou minha visão sobre o caminho percorrido por uma
+funcionalidade até chegar ao usuário.
+
+O projeto também evidenciou a importância de processos de acompanhamento e
+validação frequentes. Em um momento em que havia poucas entregas semanais e
+pouca visibilidade sobre o andamento das tarefas, a sugestão de Felipe, aluno de
+mestrado orientado pelo professor Afonso, de realizar apresentações semanais das
+funcionalidades de maior valor foi incorporada ao fluxo do time. Essa prática
+antecipou a validação das entregas principais, aumentou a transparência sobre o
+progresso das sprints e ajudou a garantir que os incrementos relevantes
+estivessem prontos antes do encerramento de cada ciclo. A participação nesse
+processo reforçou meu entendimento de que entregar software envolve também
+comunicar progresso, validar expectativas e criar mecanismos que favoreçam a
+colaboração.
+
+Como autocrítica, reconheço que poderia ter me envolvido mais profundamente na
+construção da infraestrutura em AWS. Como outro integrante da AGES III assumiu
+essa frente, optei por concentrar parte maior do meu tempo em tarefas de
+desenvolvimento. Embora essa divisão tenha sido necessária para o andamento do
+projeto, poderia ter acompanhado mais de perto as decisões de infraestrutura e
+aproveitado melhor a oportunidade de aprendizagem. Banco de dados e
+infraestrutura em nuvem permanecem, portanto, como os principais pontos que
+pretendo desenvolver nos próximos projetos.
+
+Ao final da AGES III, sinto-me mais próximo do desenvolvimento frontend, área em
+que possuo maior domínio para implementar funcionalidades, mas com uma direção
+mais clara para me tornar um profissional full stack. Na atual realidade de
+ferramentas de IA inseridas em diferentes etapas do desenvolvimento, considero
+importante compreender cada camada de uma aplicação para utilizar essas
+ferramentas de forma crítica, orientar seu uso e validar seus resultados. Minha
+confiança aumentou ao longo do projeto, mas essa evolução também trouxe uma
+reflexão importante: preciso assegurar que ela esteja fundamentada em
+compreensão técnica, investigação e capacidade de validação, e não apenas na
+facilidade de obter respostas de uma IA.
+
+De forma geral, o FinUp consolidou uma visão mais completa sobre a Engenharia de
+Software. Levo dessa experiência maior maturidade para trabalhar em equipe,
+participar de decisões arquiteturais, revisar entregas, enfrentar incertezas e
+transformar necessidades de produto em soluções integradas. A AGES III não
+eliminou todos os meus pontos de evolução, mas reduziu significativamente a
+insegurança que eu tinha ao entrar no projeto e mostrou que a disposição para
+aprender, pesquisar e colaborar é tão essencial quanto o conhecimento técnico
+acumulado.
 
 

@@ -1,53 +1,50 @@
-\documentclass[12pt,a4paper,oneside]{report}
+\documentclass[
+  a4paper,
+  12pt,
+  oneside,
+  chapter=TITLE,
+  brazil
+]{abntex2}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[brazilian]{babel}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{geometry}
-\usepackage{setspace}
+\usepackage[brazil]{babel}
+\usepackage[
+  tmargin=3cm,
+  lmargin=3cm,
+  bmargin=2cm,
+  rmargin=2cm
+]{geometry}
 \usepackage{graphicx}
-\usepackage{booktabs}
+\usepackage{helvet}
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage[style=abnt]{biblatex}
 \usepackage{csquotes}
-\usepackage{titlesec}
-\usepackage{hyperref}
+\addbibresource{bibliografia/referencias.bib}
+\input{util/style}
 
-\geometry{left=3cm,right=2cm,top=3cm,bottom=2cm}
-\onehalfspacing
-\titleformat{\chapter}[display]
-  {\normalfont\bfseries\Huge}
-  {}
-  {0pt}
-  {}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  urlcolor=blue,
-  citecolor=black,
-  pdftitle={Memorial de Atuação na AGES},
-  pdfauthor={Henrique Pinho Valente Schultz}
-}
+\def\autor{\uppercase{Henrique Pinho Valente Schultz}}
+\def\inicio{09/08/2024}
+\def\fim{21/09/2026}
+\def\ages{I, II e III}
+\def\local{Porto Alegre}
+\def\ano{2026}
 
 \begin{document}
+  \pretextual
+  \include{elementos/capa}
+  \include{elementos/resumo}
+  \listoffigures*
+  \include{elementos/siglas}
+  \tableofcontents*
 
-\hypersetup{pageanchor=false}
-\input{elementos/capa}
+  \textual
+  \pagestyle{simple}
+  \include{capitulos/apresentacao}
+  \include{capitulos/ages1}
+  \include{capitulos/ages2}
+  \include{capitulos/ages3}
 
-\clearpage
-\hypersetup{pageanchor=true}
-\pagenumbering{roman}
-\input{elementos/resumo}
-\tableofcontents
-\listoffigures
-
-\clearpage
-\pagenumbering{arabic}
-\input{capitulos/apresentacao}
-\input{capitulos/ages1}
-\input{capitulos/ages2}
-\input{capitulos/ages3}
-\input{capitulos/conclusao-final}
-\input{elementos/referencias}
-
+  \postextual
+  \include{elementos/referencias}
 \end{document}
