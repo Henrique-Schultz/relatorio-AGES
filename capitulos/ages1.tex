@@ -31,6 +31,9 @@ tornando-a mais atrativa e interativa para o público jovem.
 
 \textbf{Período de Execução}: Segundo semestre de 2024.
 
+A Figura~\ref{fig:equipe-vir} registra os integrantes que participaram do
+projeto VIR.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imagens/VIR/equipe-vir.jpeg}
@@ -45,7 +48,8 @@ tornando-a mais atrativa e interativa para o público jovem.
   \textbf{Repositório do código Fonte do Projeto}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/tree/main}
+O código-fonte e a documentação do projeto estão disponíveis na
+\href{https://tools.ages.pucrs.br/VIR/vir-wiki/-/tree/main}{wiki do VIR}.
 
 O código fonte está hospedado no GitLab, onde todo o desenvolvimento
 colaborativo é gerenciado.
@@ -57,7 +61,8 @@ colaborativo é gerenciado.
   \textbf{Banco de Dados utilizado}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/banco_dados}
+A documentação do banco de dados está disponível na
+\href{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/banco_dados}{wiki do VIR}.
 
 \begin{quote}
 Diagrama das tabelas do banco de dados, incluindo usuários, livros,
@@ -72,10 +77,21 @@ relações e funcionalidades no projeto VIR.
   \textbf{Arquitetura utilizada}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/arquitetura}
+Os detalhes arquiteturais estão disponíveis na
+\href{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/arquitetura}{wiki do VIR}.
 
-Arquitetura utliza React no frontend, Flask na API backend e PostgreSQL
-como banco de dados.
+A arquitetura utiliza React no frontend, Flask na \ac{api} e PostgreSQL
+como banco de dados \cite{react,postgresql}.
+A Figura~\ref{fig:arquitetura-vir} apresenta a organização das camadas e dos
+serviços que compunham a arquitetura prevista para o VIR.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imagens/VIR/diagrama-arquitetura.png}
+  \caption{Arquitetura técnica prevista para o VIR}
+  \label{fig:arquitetura-vir}
+  \fonte{Acervo do projeto VIR.}
+\end{figure}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -84,10 +100,21 @@ como banco de dados.
   \textbf{Protótipos das telas desenvolvidas}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/design_mockups}
+Os protótipos das interfaces estão disponíveis na
+\href{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/design_mockups}{wiki do VIR}.
 
 Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
 das interfaces.
+A Figura~\ref{fig:arquitetura-informacao-vir} detalha a arquitetura de
+informação adotada para os fluxos de leitores, escolas e administradores.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{imagens/VIR/arquitetura-de-informacao.png}
+  \caption{Arquitetura de informação do VIR}
+  \label{fig:arquitetura-informacao-vir}
+  \fonte{Acervo do projeto VIR.}
+\end{figure}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -96,7 +123,8 @@ das interfaces.
   \textbf{Tecnologias Utilizadas}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/configuracao}
+A configuração detalhada do projeto está disponível na
+\href{https://tools.ages.pucrs.br/VIR/vir-wiki/-/wikis/configuracao}{wiki do VIR}.
 
 React (Frontend): Uma biblioteca JavaScript para construir interfaces de
 usuário dinâmicas e modernas, permitindo a criação de componentes
@@ -235,6 +263,16 @@ essenciais para o fluxo do aplicativo. Apesar das limitações impostas
 pela carga acadêmica, garanti que o layout e a estrutura do footer
 estivessem finalizados e funcionais, além de contribuir para o andamento
 da squad ao acompanhar as tarefas do time.
+A Figura~\ref{fig:footer-vir} apresenta as telas de biblioteca e sinopse,
+evidenciando a navegação inferior planejada para o aplicativo.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imagens/VIR/home-footer.png}
+  \caption{Telas de biblioteca e navegação inferior do VIR}
+  \label{fig:footer-vir}
+  \fonte{Acervo do projeto VIR.}
+\end{figure}
 
 \subsection{Sprint 2}
 
@@ -247,9 +285,9 @@ resolução de problemas encontrados durante o desenvolvimento.
 
 \begin{itemize}
 \item
-  Criação de uma nova branch: Iniciei o desenvolvimento criando a branch
-  feature/Student/Login/Create-Login-Page a partir da branch dev,
-  garantindo organização e controle das modificações.
+  Criação de uma nova branch: Iniciei o desenvolvimento em uma branch dedicada
+  à página de login, derivada da branch \texttt{dev}, garantindo organização e
+  controle das modificações.
 \item
   Desenvolvimento do Componente Form: Desenvolvi e estilizei o
   componente Form, que incluiu os campos de input para "Email" e
@@ -263,8 +301,8 @@ resolução de problemas encontrados durante o desenvolvimento.
   contendo email e senha ao endpoint correspondente, assegurando
   funcionalidade básica de autenticação.
 \item
-  Controle de Versionamento: Realizei commit das alterações, rebase com
-  a branch dev para manter as atualizações e push para o repositório
+  Controle de versionamento: Realizei commits das alterações, rebase com a
+  branch \texttt{dev} para manter as atualizações e push para o repositório
   remoto.
 \item
   Resolução de Problemas no GitLab: Ao fazer um pull request para a
@@ -374,10 +412,9 @@ técnicos.
   abertura (isOpen) do modal no componente AlunoPage, ajustando o uso de
   props entre componentes pai e filho.
 \item
-  Estudo sobre CSS: Realizei estudos sobre propriedades de display no
-  CSS, como Grid, Flexbox e alinhamentos (align-items, align-content,
-  justify-items, justify-content), aprofundando o entendimento sobre as
-  melhores práticas de estilização.
+  Estudo sobre CSS: Realizei estudos sobre propriedades de display, como Grid e
+  Flexbox, e sobre estratégias de alinhamento de elementos, aprofundando o
+  entendimento sobre as melhores práticas de estilização.
 \item
   Desenvolvimento de Componentes: Concluí o desenvolvimento e a
   estilização dos componentes Student Page, Student Modal Form e Student
@@ -419,6 +456,16 @@ finalização da Student Page\textbf{,} Student Modal Form e Student List
 Component, essenciais para a gestão de alunos. Além disso, resolvi
 problemas técnicos relacionados ao controle de estado no modal e
 contribuí para a estabilização do fluxo de trabalho no repositório.
+A Figura~\ref{fig:gestao-escolas-vir} apresenta a interface de gestão de
+escolas, relacionada ao conjunto de funcionalidades administrativas do projeto.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{imagens/VIR/settings-icon.png}
+  \caption{Interface de gestão de escolas do VIR}
+  \label{fig:gestao-escolas-vir}
+  \fonte{Acervo do projeto VIR.}
+\end{figure}
 
 \section{Conclusão}
 

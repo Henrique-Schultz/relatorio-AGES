@@ -1,0 +1,679 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{aws-bedrock}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Bedrock Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/bedrock/
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/bedrock/
+      \endverb
+    \endentry
+    \entry{aws-cognito}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon Cognito Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/cognito/
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/cognito/
+      \endverb
+    \endentry
+    \entry{aws-ebs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon EBS Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/ebs/
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/ebs/
+      \endverb
+    \endentry
+    \entry{aws-ec2}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amazon EC2 Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/ec2/
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/ec2/
+      \endverb
+    \endentry
+    \entry{aws-lambda}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{AWS Lambda Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/lambda/
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/lambda/
+      \endverb
+    \endentry
+    \entry{axios}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d3e28535c74ccee29182aeb3cf837e98}{%
+           family={{Axios}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{fullhash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{fullhashraw}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{bibnamehash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{authorbibnamehash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{authornamehash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{authorfullhash}{d3e28535c74ccee29182aeb3cf837e98}
+      \strng{authorfullhashraw}{d3e28535c74ccee29182aeb3cf837e98}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Axios Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://axios-http.com/docs/intro
+      \endverb
+      \verb{url}
+      \verb https://axios-http.com/docs/intro
+      \endverb
+    \endentry
+    \entry{docker}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c5fd214cdd0d2b3b4272e73b022ba5c2}{%
+           family={{Docker}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{fullhash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{fullhashraw}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{bibnamehash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{authorbibnamehash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{authornamehash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{authorfullhash}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \strng{authorfullhashraw}{c5fd214cdd0d2b3b4272e73b022ba5c2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.docker.com
+      \endverb
+      \verb{url}
+      \verb https://docs.docker.com
+      \endverb
+    \endentry
+    \entry{expo}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c29f23f279126757ba18ec74d0d27cfa}{%
+           family={{Expo}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{fullhash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{fullhashraw}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{bibnamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorbibnamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authornamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorfullhash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorfullhashraw}{c29f23f279126757ba18ec74d0d27cfa}
+      \field{extraname}{1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Expo Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.expo.dev
+      \endverb
+      \verb{url}
+      \verb https://docs.expo.dev
+      \endverb
+    \endentry
+    \entry{expo-router}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c29f23f279126757ba18ec74d0d27cfa}{%
+           family={{Expo}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{fullhash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{fullhashraw}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{bibnamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorbibnamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authornamehash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorfullhash}{c29f23f279126757ba18ec74d0d27cfa}
+      \strng{authorfullhashraw}{c29f23f279126757ba18ec74d0d27cfa}
+      \field{extraname}{2}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Expo Router Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.expo.dev/router/introduction/
+      \endverb
+      \verb{url}
+      \verb https://docs.expo.dev/router/introduction/
+      \endverb
+    \endentry
+    \entry{finup-wiki}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b2cf66e557413fc079b068154edf174}{%
+           family={{FinUp}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b2cf66e557413fc079b068154edf174}
+      \strng{fullhash}{5b2cf66e557413fc079b068154edf174}
+      \strng{fullhashraw}{5b2cf66e557413fc079b068154edf174}
+      \strng{bibnamehash}{5b2cf66e557413fc079b068154edf174}
+      \strng{authorbibnamehash}{5b2cf66e557413fc079b068154edf174}
+      \strng{authornamehash}{5b2cf66e557413fc079b068154edf174}
+      \strng{authorfullhash}{5b2cf66e557413fc079b068154edf174}
+      \strng{authorfullhashraw}{5b2cf66e557413fc079b068154edf174}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wiki do Projeto FinUp}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki
+      \endverb
+      \verb{url}
+      \verb https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki
+      \endverb
+    \endentry
+    \entry{git}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0bcc70105ad279503e31fe7b3f47b665}{%
+           family={{Git}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{fullhash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{fullhashraw}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{bibnamehash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{authorbibnamehash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{authornamehash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{authorfullhash}{0bcc70105ad279503e31fe7b3f47b665}
+      \strng{authorfullhashraw}{0bcc70105ad279503e31fe7b3f47b665}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Git Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://git-scm.com/doc
+      \endverb
+      \verb{url}
+      \verb https://git-scm.com/doc
+      \endverb
+    \endentry
+    \entry{react-native}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b6755d218d5f4e1cef9cce9cc39aeda9}{%
+           family={{Meta}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{fullhash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{fullhashraw}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{bibnamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authorbibnamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authornamehash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authorfullhash}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \strng{authorfullhashraw}{b6755d218d5f4e1cef9cce9cc39aeda9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{React Native Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactnative.dev/docs/getting-started
+      \endverb
+      \verb{url}
+      \verb https://reactnative.dev/docs/getting-started
+      \endverb
+    \endentry
+    \entry{java}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={{Oracle}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhashraw}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhashraw}{30162ed78b6c10f731411f2fc440c24f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Java Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/en/java/
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/en/java/
+      \endverb
+    \endentry
+    \entry{postgresql}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36423acfb135ffe286ea438eafcb0bc6}{%
+           family={{PostgreSQL Global Development Group}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{fullhash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{fullhashraw}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{bibnamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authorbibnamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authornamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authorfullhash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authorfullhashraw}{36423acfb135ffe286ea438eafcb0bc6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PostgreSQL Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.postgresql.org/docs/
+      \endverb
+      \verb{url}
+      \verb https://www.postgresql.org/docs/
+      \endverb
+    \endentry
+    \entry{react}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=50ce2da63bea6a618e7578fa50690040}{%
+           family={{React}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{fullhash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{fullhashraw}{50ce2da63bea6a618e7578fa50690040}
+      \strng{bibnamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorbibnamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authornamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorfullhash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorfullhashraw}{50ce2da63bea6a618e7578fa50690040}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{React Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://react.dev
+      \endverb
+      \verb{url}
+      \verb https://react.dev
+      \endverb
+    \endentry
+    \entry{swagger}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18f762e3d94a78837863bd39e59c37bc}{%
+           family={{SmartBear}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{fullhash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{fullhashraw}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{bibnamehash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{authorbibnamehash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{authornamehash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{authorfullhash}{18f762e3d94a78837863bd39e59c37bc}
+      \strng{authorfullhashraw}{18f762e3d94a78837863bd39e59c37bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Swagger Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://swagger.io/docs/
+      \endverb
+      \verb{url}
+      \verb https://swagger.io/docs/
+      \endverb
+    \endentry
+    \entry{tailwind}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=115eb058b42d5a622d39c9383748c476}{%
+           family={{Tailwind Labs}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{fullhash}{115eb058b42d5a622d39c9383748c476}
+      \strng{fullhashraw}{115eb058b42d5a622d39c9383748c476}
+      \strng{bibnamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorbibnamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authornamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorfullhash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorfullhashraw}{115eb058b42d5a622d39c9383748c476}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tailwind CSS Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tailwindcss.com/docs
+      \endverb
+      \verb{url}
+      \verb https://tailwindcss.com/docs
+      \endverb
+    \endentry
+    \entry{tanstack-router}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dd55379b93ec80f16ff6253eb004a35}{%
+           family={{TanStack}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{bibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorbibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authornamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TanStack Router Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tanstack.com/router/latest
+      \endverb
+      \verb{url}
+      \verb https://tanstack.com/router/latest
+      \endverb
+    \endentry
+    \entry{vite}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d9db1ebcf1c30ffc9485e981aec4f04}{%
+           family={{Vite}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{fullhash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{fullhashraw}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{bibnamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authorbibnamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authornamehash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authorfullhash}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \strng{authorfullhashraw}{1d9db1ebcf1c30ffc9485e981aec4f04}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vite Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vitejs.dev/guide/
+      \endverb
+      \verb{url}
+      \verb https://vitejs.dev/guide/
+      \endverb
+    \endentry
+    \entry{spring-boot}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=56079badd056a19303cc26e6a4fcc7e0}{%
+           family={{VMware}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{fullhash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{fullhashraw}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{bibnamehash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{authorbibnamehash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{authornamehash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{authorfullhash}{56079badd056a19303cc26e6a4fcc7e0}
+      \strng{authorfullhashraw}{56079badd056a19303cc26e6a4fcc7e0}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spring Boot Documentation}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.spring.io/spring-boot/documentation.html
+      \endverb
+      \verb{url}
+      \verb https://docs.spring.io/spring-boot/documentation.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

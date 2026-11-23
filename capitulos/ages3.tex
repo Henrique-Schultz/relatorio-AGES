@@ -63,6 +63,9 @@ saudável e consciente com o próprio dinheiro.
   \href{https://tools.ages.pucrs.br/guilherme.santos}{Guilherme Azevedo dos Santos}.
 \end{description}
 
+A Figura~\ref{fig:equipe-finup} reúne os integrantes que participaram do
+projeto FinUp.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imagens/Finup/equipe-finup.jpeg}
@@ -77,16 +80,13 @@ saudável e consciente com o próprio dinheiro.
   \textbf{Repositório do código Fonte do Projeto}
 \end{enumerate}
 
-Wiki: \url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki}
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki}{Wiki do projeto FinUp}.
 
-Frontend Web:
-\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-web}
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-web}{Repositório do frontend web}.
 
-Frontend Mobile:
-\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-mobile}
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-mobile}{Repositório do frontend mobile}.
 
-Backend:
-\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-backend}
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-backend}{Repositório do backend}.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -96,8 +96,8 @@ Backend:
 \end{enumerate}
 
 \begin{quote}
-Link para a wiki do banco:
-\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Banco\%20de\%20Dados}
+A documentação do banco está disponível na
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Banco\%20de\%20Dados}{wiki do FinUp}.
 
 O banco de dados do FinUp utiliza o modelo relacional, organizado em
 três domínios: perfil do usuário, controle financeiro e educação
@@ -115,19 +115,20 @@ padronização e facilitando a evolução do banco.
   \textbf{Arquitetura utilizada}
 \end{enumerate}
 
-Link para wiki da arquitetura:
-\url{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/arquitetura}
+Os detalhes arquiteturais estão disponíveis na
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/arquitetura}{wiki do FinUp}.
 
 A arquitetura do FinUp foi dividida em quatro repositórios: finup-web
 (React + Vite) para o painel administrativo, finup-mobile (React Native
-+ Expo) para o aplicativo do usuário, finup-backend (Java Spring +
-Python para IA) para a API e lógica de negócio, e finup-infra para
-gerenciamento da infraestrutura {[}1{]}. A infraestrutura é hospedada na
-AWS, utilizando EC2 para os containers Docker (frontend web, backend e
-PostgreSQL), Cognito para autenticação de usuários, Bedrock como motor
-central de IA (chatbot, trilhas e análise financeira), Lambda para
-requisições específicas do painel admin, e EBS para armazenamento do
-banco de dados. Além disso, foi adotado o Railforge como ferramenta de
++ Expo) para o aplicativo do usuário, finup-backend (Java, Spring Boot
+e Python) para a API e lógica de negócio, e finup-infra para gerenciamento da
+infraestrutura \cite{finup-wiki,react,vite,react-native,expo,java,spring-boot}.
+A infraestrutura é hospedada na \ac{aws}, utilizando EC2 para os containers
+Docker \cite{docker} (frontend web, backend e PostgreSQL\cite{postgresql}),
+Cognito para autenticação de usuários, Bedrock como motor central de IA
+(Chatbot, trilhas e análise financeira), Lambda para requisições específicas do
+painel administrativo e EBS para armazenamento do banco de dados
+\cite{aws-ec2,aws-cognito,aws-bedrock,aws-lambda,aws-ebs}. Além disso, foi adotado o Railforge como ferramenta de
 padronização do fluxo de desenvolvimento nas diferentes stacks do
 projeto. A Figura~\ref{fig:arquitetura-finup} apresenta a organização dos
 componentes da solução e o papel dos serviços AWS previstos na infraestrutura.
@@ -147,7 +148,8 @@ componentes da solução e o papel dos serviços AWS previstos na infraestrutura
   \textbf{Protótipos das telas desenvolvidas}
 \end{enumerate}
 
-https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Design(Mockups)
+Os mockups do projeto estão disponíveis na
+\href{https://tools.ages.pucrs.br/2026-2/6lmnp/finup/finup-wiki/-/wikis/Design(Mockups)}{wiki do FinUp}.
 
 Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
 das interfaces.
@@ -159,16 +161,18 @@ das interfaces.
   \textbf{Tecnologias Utilizadas}
 \end{enumerate}
 
-Web (finup-web): React, Vite, Tailwind CSS, TanStack Router, Axios.
+Web (finup-web): React, Vite, Tailwind CSS, TanStack Router e Axios
+\cite{react,vite,tailwind,tanstack-router,axios}.
 
-Mobile (finup-mobile): React Native, Expo, Expo Router.
+Mobile (finup-mobile): React Native e Expo \cite{react-native,expo}, com Expo
+Router \cite{expo-router}.
 
 \begin{quote}
-Backend (finup-backend): Java, Spring Boot, Python, PostgreSQL,
-Swagger/OpenAPI.
+Backend (finup-backend): Java, Spring Boot, Python, PostgreSQL e
+Swagger/OpenAPI \cite{java,spring-boot,postgresql,swagger}.
 
 Infraestrutura e DevOps (finup-infra): Docker, Docker Compose, GitHub
-Actions (CI/CD), Railforge.
+Actions (CI/CD) e Railforge \cite{docker}.
 
 Serviços AWS: EC2 (hospedagem dos containers), Cognito (autenticação),
 Bedrock (motor de IA), Lambda (requisições do painel admin), EBS
@@ -200,7 +204,7 @@ para que alguém pudesse assumi-las. Reuniões no Discord ocorriam de maneira
 pontual, principalmente nas vésperas das apresentações ao cliente, para apoiar a
 integração e a preparação das entregas.
 
-O fluxo de desenvolvimento partia da branch \texttt{develop}. Para cada tarefa,
+O fluxo de desenvolvimento com Git \cite{git} partia da branch \texttt{develop}. Para cada tarefa,
 o integrante criava uma branch específica seguindo os prefixos \texttt{feat},
 \texttt{fix}, \texttt{docs}, \texttt{refactor} ou \texttt{test}; registrava os
 avanços por meio de commits no padrão \texttt{tipo: descrição curta}; e abria um
@@ -215,10 +219,10 @@ integradas à \texttt{develop}.
 O Railforge foi empregado como orientação documental para o uso de IA no
 desenvolvimento, reunindo padrões e instruções específicos do projeto. Antes das
 integrações e demonstrações, as funcionalidades eram verificadas com Expo Go em
-dispositivos físicos ou emuladores, além do uso de Docker e Swagger para validar
-o ambiente e os endpoints. O projeto também possuía pipeline de integração
-contínua; contudo, a experiência revelou espaço para fortalecer seus guardrails
-e automatizar mais verificações.
+dispositivos físicos ou emuladores \cite{expo}, além do uso de Docker
+\cite{docker} e Swagger \cite{swagger} para validar o ambiente e os endpoints.
+O projeto também possuía uma pipeline de \ac{ci}; contudo, a experiência revelou
+espaço para fortalecer seus guardrails e automatizar mais verificações.
 
 Como mecanismo adicional de validação, passaram a ser realizadas apresentações
 semanais das funcionalidades de maior valor, normalmente uma ou duas semanas
@@ -359,7 +363,7 @@ responsabilidades de padronização do processo de desenvolvimento com a
 implementação de uma funcionalidade relevante para o aplicativo mobile: a área
 autenticada de chat com inteligência artificial. O trabalho envolveu a
 consolidação das instruções do Railforge, a organização do fluxo de branches e
-Pull Requests, o estudo da arquitetura MVVM e a preparação do ambiente local
+Pull Requests, o estudo da arquitetura \ac{mvvm} e a preparação do ambiente local
 para integração entre mobile, backend, banco de dados e autenticação.
 
 \textbf{Atividades Desempenhadas:}
@@ -550,10 +554,9 @@ gastos.
 
 A Sprint 4 concentrou-se na estabilização das entregas do FinUp, na integração
 entre mobile, backend e banco de dados, e na evolução de funcionalidades
-relacionadas à análise financeira, educação financeira e inteligência
-artificial. Além do desenvolvimento de novas funcionalidades, atuei na revisão
-e integração de Pull Requests, na atualização tecnológica do aplicativo mobile
-e na validação das entregas em ambiente local e em dispositivos Android.
+relacionadas à análise financeira. Além do desenvolvimento de novas
+funcionalidades, atuei na revisão e integração de Pull Requests e na atualização
+tecnológica do aplicativo mobile.
 
 \textbf{Atividades Desempenhadas:}
 
@@ -581,14 +584,8 @@ e na validação das entregas em ambiente local e em dispositivos Android.
   Atualização do aplicativo mobile para o Expo SDK 58, com adequação das
   dependências necessárias.
 \item
-  Implementação da triagem de perfil de investidor e da exibição do FinUp
-  Score.
-\item
   Realização de melhorias nas telas Home, Análise e Chatbot, bem como nos
   fluxos de navegação.
-\item
-  Evolução da Trilha de Estudos, incluindo funcionalidades associadas ao
-  progresso do usuário.
 \item
   Implementação de um widget Android para acompanhamento de gastos.
 \item
@@ -598,18 +595,7 @@ e na validação das entregas em ambiente local e em dispositivos Android.
   Correção de problemas de encoding em scripts SQL e realização de testes de
   integração.
 \item
-  Evolução das funcionalidades de inteligência artificial, incluindo
-  categorização de informações e mecanismos de proteção contra
-  \textit{prompt injection}.
-\item
-  Investigação da persistência das conversas do Chatbot utilizando o Amazon S3.
-\item
   Análise das regras de progressão da Trilha de Estudos.
-\item
-  Realização de testes funcionais e validações em dispositivos Android.
-\item
-  Documentação de migrations, decisões técnicas, procedimentos de teste e
-  instruções de validação.
 \item
   Preparação das entregas com commits organizados, descrição de Pull Requests,
   orientações para revisão e vídeo demonstrativo.
@@ -617,9 +603,9 @@ e na validação das entregas em ambiente local e em dispositivos Android.
 
 \textbf{Ferramentas Utilizadas:}
 
-React Native, Expo SDK 58, TypeScript, arquitetura MVVM, Android, Git, GitHub,
-Swagger/OpenAPI, Spring Boot, PostgreSQL, Docker, Docker Compose, AWS Cognito,
-Amazon S3, APIs REST, SQL e ferramentas de inteligência artificial.
+React Native, Expo SDK 58, TypeScript, arquitetura MVVM, Git, GitHub,
+Swagger/OpenAPI, Spring Boot, PostgreSQL, Docker, Docker Compose, APIs REST e
+SQL.
 
 \textbf{Contribuições no desenvolvimento:}
 
@@ -641,19 +627,15 @@ coerentes, preparar instruções claras de validação e separar experimentaçõ
 locais das mudanças efetivamente destinadas à integração na branch principal.
 
 A sprint também ampliou minha visão sobre a integração entre as diferentes
-camadas do FinUp. A atualização de migrations, os testes com Swagger, Docker,
-Spring Boot e PostgreSQL contribuíram para compreender melhor o fluxo de dados
-e o isolamento das informações por usuário por meio de autenticação com
-\textit{Bearer Token}. No contexto de inteligência artificial, os estudos sobre
-categorização, proteção contra \textit{prompt injection} e persistência das
-conversas no Amazon S3 reforçaram a necessidade de considerar segurança,
-confiabilidade e rastreabilidade ao projetar funcionalidades baseadas em IA.
+camadas do FinUp. A atualização de migrations e as validações com Swagger,
+Docker, Spring Boot e PostgreSQL contribuíram para compreender melhor o fluxo de
+dados entre mobile, backend e banco de dados.
 
-De modo geral, a Sprint 4 consolidou a etapa de entrega e estabilização do
-projeto. O trabalho envolveu desenvolvimento de funcionalidades, testes,
-documentação e integração contínua, preparando a aplicação para as próximas
-evoluções da aba Análise, da Trilha de Estudos, do Chatbot e das integrações
-entre mobile, backend e banco de dados.
+De modo geral, a Sprint 4 consolidou uma etapa de entrega e estabilização do
+projeto. O trabalho envolveu o desenvolvimento do card de alertas, a atualização
+tecnológica do aplicativo e a integração de Pull Requests, preparando a aba
+Análise e as integrações entre mobile, backend e banco de dados para as próximas
+evoluções.
 
 \section{Conclusão}
 

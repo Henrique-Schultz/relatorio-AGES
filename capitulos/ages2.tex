@@ -32,6 +32,9 @@ sustentável.
 
 \textbf{Período de Execução}: Segundo semestre de 2025.
 
+A Figura~\ref{fig:equipe-promata} apresenta os integrantes que participaram do
+projeto Pró-Mata.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imagens/ProMata/equipe-promata.png}
@@ -46,7 +49,8 @@ sustentável.
   \textbf{Repositório do código Fonte do Projeto}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/pro-mata}
+O código-fonte e a documentação do projeto estão disponíveis na
+\href{https://tools.ages.pucrs.br/pro-mata}{wiki do Pró-Mata}.
 
 O código fonte está hospedado no GitLab, onde todo o desenvolvimento
 colaborativo é gerenciado.
@@ -58,13 +62,14 @@ colaborativo é gerenciado.
   \textbf{Banco de Dados utilizado}
 \end{enumerate}
 
-\url{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Banco\%20de\%20Dados}
+A documentação do banco de dados está disponível na
+\href{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Banco\%20de\%20Dados}{wiki do Pró-Mata}.
 
 \begin{quote}
 Diagrama das tabelas do banco de dados.
 
-\textbf{Desenvolvimento}: Um container PostgreSQL simples que roda
-localmente. O Prisma ORM gerencia as migrações automaticamente.
+\textbf{Desenvolvimento}: Um contêiner PostgreSQL executado localmente. O Prisma
+ORM gerencia as migrações automaticamente.
 
 \textbf{Produção}: PostgreSQL com replicação master-slave, backups
 automáticos criptografados, e monitoramento futuro com Grafana e
@@ -78,7 +83,8 @@ PostgreSQL exporter.
   \textbf{Arquitetura utilizada}
 \end{enumerate}
 
-https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura
+Os detalhes arquiteturais estão disponíveis na
+\href{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura}{wiki do Pró-Mata}.
 
 Baseando-se no que foi planejado para o nosso banco de dados,
 levantamento dos requisitos e o entendimento geral do time sobre o
@@ -92,7 +98,8 @@ Cliente-Servidor, onde há uma separação entre o frontend e backend.
   \textbf{Protótipos das telas desenvolvidas}
 \end{enumerate}
 
-https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Design
+Os protótipos das interfaces estão disponíveis na
+\href{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Design}{wiki do Pró-Mata}.
 
 Os mockups do projeto foram feitos no Figma, exibindo o design e fluxo
 das interfaces.
@@ -105,23 +112,24 @@ das interfaces.
 \end{enumerate}
 
 \begin{quote}
-https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura
+As decisões técnicas detalhadas estão disponíveis na
+\href{https://tools.ages.pucrs.br/pro-mata/wiki/-/wikis/Arquitetura}{wiki do Pró-Mata}.
 
 \textbf{React 19}: Construção de interfaces declarativas com componentes
-reutilizáveis.
+reutilizáveis \cite{react}.
 
-\textbf{TypeScript:} Tipagem estática (configuração em tsconfig.json,
+\textbf{TypeScript:} Tipagem estática (configuração em \texttt{tsconfig.json},
 moduleResolution: "bundler", baseUrl, paths @/*).
 
-\textbf{Vite 6} --- Dev server e build otimizados; plugin
-\textbf{@tanstack/router-plugin} com autoCodeSplitting e geração de
-src/routeTree.gen.ts; plugin \textbf{@tailwindcss/vite}.
+\textbf{Vite 6} --- Servidor de desenvolvimento e \textit{build} otimizados
+\cite{vite}; uso do plugin \texttt{@tanstack/router-plugin} para divisão
+automática de código e geração de rotas.
 
-\textbf{Tailwind CSS (v4)} --- Utilitários CSS, tokens/temas em
-src/styles/globals.css (variações claro/escuro).
+\textbf{Tailwind CSS (v4)} --- Utilitários CSS e tokens de tema para as
+variações claro/escuro \cite{tailwind}.
 
-\textbf{TanStack Router} --- Roteamento file-based em src/routes/**, com
-beforeLoad/guards, code-splitting e devtools.
+\textbf{TanStack Router} --- Roteamento baseado em arquivos, com guardas,
+divisão de código e ferramentas de desenvolvimento \cite{tanstack-router}.
 
 \textbf{TanStack Query} --- Cache e invalidação de dados; QueryClient
 injetado no contexto do Router.
@@ -306,8 +314,8 @@ projeto.
   Aplicação de cores padronizadas via global.css e criação da variável
   -\/-cor-card-labels.
 \item
-  Ajustes visuais (sombra inset, scroll invisível para descrições
-  longas, padding/margin, z-index).
+  Ajustes visuais, incluindo sombra interna, rolagem para descrições longas,
+  espaçamentos e controle de sobreposição de elementos.
 \item
   Configuração de labels com ícones dinâmicos via Lucide React.
 \item
@@ -475,8 +483,8 @@ com a estabilidade do código na reta final da disciplina.
 \item
   Node.js, Vite (ambiente de desenvolvimento e testes).
 \item
-  Git/GitHub (merge, resolução de conflitos e versionamento dos arquivos
-  de teste).
+  Git e GitHub (merges, resolução de conflitos e versionamento dos arquivos de
+  teste).
 \end{itemize}
 
 \textbf{Contribuições no desenvolvimento:}
